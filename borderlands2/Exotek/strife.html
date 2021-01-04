@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Borderlands 2 Skill Calculator: Infiltrator</title>
+	<link href='../main.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="../skillManager.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="header">
+	<div class="links"><a class="reset" href="exotek.html">&lt; go back</a> | <a href="strife.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<h1>Borderlands <em>2</em> skill calculator <div class="stamp">(Exotek's VH)</div></h1>
+	<h2>Strife</h2>
+	<h3>Level <span class="charLevel">5</span> Infiltrator</h3>
+</div>
+<img unselectable="on" class="portrait" src="../assassinPortrait.png">
+
+<div>
+	<div class="actionSkill"><img src="../icons/assassin-actionskill.png" />
+		<div class="description"><h2>Infiltrate</h2><font style="color:#d09cdb;">Action Skill.</font><br>Activate your <font style="color:#00b4b4;">suit and cloak</font> for a few seconds. The longer you are cloaked the more damage your <font style="color:#00b4b4;">next shot</font> deals but ending cloak sooner results in less energy usage and shorter cooldown. In addition, upon <font style="color:#d09cdb;">Infiltrate</font> activation you restore 50% of your <font style="color:#00b4b4;">Max. Health</font>.<br>Cooldown: 20 seconds<br><font style="color:#00b4b4;">Gun Damage</font>: Up to <font style="color:green;">500</font>%</div>
+		<div class="points">1/1</div>
+	</div><br><br>
+	<div class="actionSkill">
+	<h2>Hidden Ability</h2>
+		<div class="description"><h2>Class Modifiers</h2><font style="color:#ffd47d;">None</font> <font style="color:#38b833;"></font></div>
+	</div>
+</div>
+
+<div class="treeCollection">	
+
+<div class="treewrapper green">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-3.png">
+				<div class="description"><h2>Deterrence</h2>While your <font style="color:#ffd47d;">shield</font> is <font style="color:#ffd47d;">depleted</font>, <font style="color:#ffd47d;">all damage</font> you take is <font style="color:#ffd47d;">reduced</font>.<br><font style="color:#00b4b4;">Damage Reduction</font>: <em data-base="+4"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-sniping-9.png">
+				<div class="description"><h2>Tension</h2>While you <font style="color:#ffd47d;">move</font>, enemies fear your unpredictable motions, <font style="color:#ffd47d;">reducing their accuracy</font>.<br><font style="color:#00b4b4;">Enemy Accuracy</font>: <em data-base="-20"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-8.png">
+				<div class="description"><h2>Cyclone Lash</h2>While <font style="color:#ffd47d;">moving</font> you have a chance to <font style="color:#ffd47d;">deflect bullets</font> against enemies. Deflected bullets deal reduced damage to you and increased damage against enemies.<br><font style="color:#00b4b4;">Deflection Chance</font>: <em data-base="5"></em>%<br><font style="color:#00b4b4;">Damage Taken</font>: <em data-base="-10"></em>%<br><font style="color:#00b4b4;">Deflected Bullets Damage</font>: <em data-base="+20"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="../icons/assassin-sniping-3.png">
+				<div class="description"><h2>Bionic Implant</h2>While <font style="color:#d09cdb;">Infiltrate</font> is active you are able to see <font style="color:#ffd47d;">Enemy Crit Locations</font>. In addition, increases your <font style="color:#ffd47d;">Zoom</font> with all gun types.<br><font style="color:#00b4b4;">Highlighted Enemy Crit Locations.</font><br><font style="color:#00b4b4;">Zoom</font>: <em data-base="+20"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-5.png">
+				<div class="description"><h2>Momentum</h2>While your shield is depleted, you gain increased <font style="color:#ffd47d;">Movement Speed</font> and <font style="color:#ffd47d;">Jump Height</font><br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Jump Height</font>: <em data-base="+3"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-sniping-5.png">
+				<div class="description"><h2>Auger Round</h2>When <font style="color:#d09cdb;">Infiltrate</font> is active, your revealing shot deals heavily increased <font style="color:#ffd47d;">Gun Damage</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+40"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-6.png">
+				<div class="description"><h2>Waylay</h2>Increases <font style="color:#ffd47d;">Damage</font> dealt when <font style="color:#ffd47d;">attacking from behind</font>, or when attacking an enemy who is <font style="color:#ffd47d;">targeting someone other than you</font>.<br><font style="color:#00b4b4;">Waylay Damage</font>: <em data-base="+4"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-cunning-7.png">
+				<div class="description"><h2>Invigorate</h2>When <font style="color:#d09cdb;">Infiltrate</font> is active you gain <font style="color:#ffd47d;">shield</font> and <font style="color:#ffd47d;">ammo</font> regeneration.<br><font style="color:#00b4b4;">Shield Regeneration</font>: <em data-base="0.4"></em>%/second<br><font style="color:#00b4b4;">Ammo</font>: <em data-base="+0.5"></em>/second<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="4" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="../icons/assassin-cunning-4.png">
+				<div class="description"><h2>Auxilary Systems</h2>Upon <font style="color:#d09cdb;">Infiltrate</font> activation, you lose the provided health restoration but you restore your shield instead.<br><font style="color:#00b4b4;">Infiltrate Health Restored</font>: <em data-base="0"></em>%<br><font style="color:#00b4b4;">Shield Restored</font>: <em data-base="100"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-cunning-1.png">
+				<div class="description"><h2>Demoralize</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy <font style="color:#ffd47d;">demoralize</font> other nearby enemies, making them deal <font style="color:#ffd47d;">reduced damage</font> for a few seconds.<br><font style="color:#00b4b4;">Enemy Gun Damage</font>: <em data-base="-25"></em>%<br><font style="color:#00b4b4;">Enemy Melee Damage</font>: <em data-base="-25"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="5" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="../icons/assassin-bloodshed-4.png">
+				<div class="description"><h2>Energy Conversion</h2>When <font style="color:#ffd47d;">taking damage</font>, your suit has a 25% chance to absorb kinetic energy from enemy bullets and melee attacks, and convert them into energy for your suit.<br><font style="color:#00b4b4;">Cooldown Rate</font>: <em data-base="+20"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="totalPoints">
+			<span class="totalPoints">0</span>
+		</div>
+		<legend>Infiltration</legend>
+	</div>
+</div>
+
+<div class="treewrapper blue">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="4"><img src="../icons/assassin-sniping-2.png">
+				<div class="description"><h2>Sustained Fire</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy increases <font style="color:#ffd47d;">Fire Rate</font> and <font style="color:#ffd47d;">Reload Speed</font> for a few seconds.<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+5"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="../icons/assassin-sniping-7.png">
+				<div class="description"><h2>Elimination Protocol</h2>Scoring a <font style="color:#ffd47d;">Critical Hit</font> with any gun increases your <font style="color:#ffd47d;">Critical Hit Damage</font>. This effect can stack and each stack last for 10 seconds.<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+5"></em>%/stack<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-sniping-1.png">
+				<div class="description"><h2>Focused Aim</h2>Increases <font style="color:#ffd47d;">Weapons Accuracy</font> and <font style="color:#ffd47d;">Recoil Reduction</font>.<br><font style="color:#00b4b4;">Weapon Accuracy</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Recoil Reduction</font>: <em data-base="+8"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-sniping-4.png">
+				<div class="description"><h2>Sidearm Tactics</h2>Increases <font style="color:#ffd47d;">Damage</font> and <font style="color:#ffd47d;">Reload Speed</font> for <font style="color:#ffd47d;">Pistols</font> and <font style="color:#ffd47d;">SMGs</font>.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+3"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-sniping-6.png">
+				<div class="description"><h2>Heavy Ordnance</h2>Increases <font style="color:#ffd47d;">Damage</font> and <font style="color:#ffd47d;">Fire Rate</font> for <font style="color:#ffd47d;">Sniper Rifles</font> and <font style="color:#ffd47d;">Shotguns</font>.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+3"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="../icons/assassin-sniping-8.png">
+				<div class="description"><h2>Retargeting Protocols</h2><font style="color:#ffd47d;">Manually</font> reloading your gun activates <font style="color:#ffd47d;">Retargeting Protocols</font>. While active, you gain increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Critical Hit Damage</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+20"></em>%<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+20"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-cunning-0.png">
+				<div class="description"><h2>Haste</h2>Increases <font style="color:#ffd47d;">Weapon Swap Speed</font> and <font style="color:#ffd47d;">Weapon Aim Speed</font>.<br><font style="color:#00b4b4;">Weapon Swap Speed</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Weapon Aim Speed</font>: <em data-base="+10"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-cunning-2.png">
+				<div class="description"><h2>Redirection</h2>You use some of your <font style="color:#ffd47d;">suit's energy</font> to boost damage of your <font style="color:#ffd47d;">amplify shields</font>.<br><font style="color:#00b4b4;">Amplify Shield Damage</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Cooldown Rate</font>: <em data-base="-2"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="4" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-sniping-0.png">
+				<div class="description"><h2>Indoctrination</h2>Increases the capability of the <font style="color:#ffd47d;">Hyperion's weaponry</font><br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Weapon Accuracy</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Magazine Size</font>: <em data-base="+2"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="5" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="../icons/assassin-cunning-6.png">
+				<div class="description"><h2>Kinetic Transfer</h2>You use some of your suits energy to increase <font style="color:#ffd47d;">Bullet Speed</font> of your guns making them pierce through enemies. If your shot hits an enemy after piercing an enemy it deals <font style="color:#ffd47d;">massively increased damage</font>. <font style="color:#ffd47d;">Kinetic Transfer</font> does not work with rockets and some special projectiles.<br><font style="color:#00b4b4;">Bullet Speed</font>: <em data-base="+100"></em>%<br><font style="color:#00b4b4;">Damage Increase</font>: <em data-base="+100"></em>%<br><font style="color:#00b4b4;">Cooldown Rate</font>: <em data-base="-10"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="totalPoints">
+			<span class="totalPoints">0</span>
+		</div>
+		<legend>Aptitude</legend>
+	</div>
+</div>
+
+<div class="treewrapper red">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-1.png">
+				<div class="description"><h2>Repellant</h2>Reduces the duration of enemy <font style="Color:#ffd47d;">Elemental Status Effects</font> on you.<br><font style="Color:#00b4b4;">Elemental Status Effects</font>: <em data-base="-10"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-0.png">
+				<div class="description"><h2>Lacerate</h2>Massively increases <font style="Color:#ffd47d;">Melee Damage</font> against enemies with low health.<br><font style="Color:#00b4b4;">Melee Damage</font>: <em data-base="+120"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-2.png">
+				<div class="description"><h2>Virulent Agents</h2><font style="Color:#e02222;">Kill Skill.</font> Killing an enemy makes newly applied status have an <font style="Color:#ffd47d;">increased duration</font> for a few seconds.<br><font style="Color:#00b4b4;">Corrode Duration</font>: <em data-base="+10"></em>%<br><font style="Color:#00b4b4;">Burn Duration</font>: <em data-base="+8"></em>%<br><font style="Color:#00b4b4;">Electrocute Duration</font>: <em data-base="+8"></em>%<br><font style="Color:#00b4b4;">Slag Duration</font>: <em data-base="+8"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="../icons/assassin-cunning-5.png">
+				<div class="description"><h2>Vampire Leech</h2>Shooting an enemy puts a mark on them for a short duration. You and your allies will <font style="Color:#ffd47d;">steal life</font> from any marked enemies for the duration of the mark.<br><font style="Color:#00b4b4;">Life Steal</font>: <em data-base="1"></em>%<span class="perLevel"></span><br>The mark last for 5 seconds.</div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-7.png">
+				<div class="description"><h2>Atonement</h2>You sacrifice your <font style="color:#ffd47d;">Max Health</font> in exchange for increased <font style="color:#ffd47d;">Melee Damage</font>.<br><font style="color:#00b4b4;">Max Health</font>: <em data-base="-5"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+5"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="5"><img src="../icons/assassin-cunning-8.png">
+				<div class="description"><h2>Corrosive Bite</h2>Increases all <font style="color:#ffd47d;">Corrosive and Corrode Damage</font> that you inflict.<br><font style="color:#00b4b4;">Corrosive Damage</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Corrode Damage</font>: <em data-base="+6"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-3.png">
+				<div class="description"><h2>Fatal Stance</h2><font style="Color:#e02222;">Kill Skill.</font> Killing an enemy increases your <font style="color:#ffd47d;">Melee Damage</font> and <font style="color:#ffd47d;">Melee Damage Reduction</font> for a few seconds.<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+4"></em>%<br><font style="color:#00b4b4;">Melee Damage Reduction</font>: <em data-base="+4"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/assassin-bloodshed-9.png">
+				<div class="description"><h2>Reversal Shift</h2>After <font style="color:#ffd47d;">Striking</font> an enemy, you activate <font style="color:#ffd47d;">Reversal Shift</font>, increasing your <font style="color:#ffd47d;">Elemental Damage</font> for 3 seconds.<br><font style="color:#00b4b4;">Elemental Damage</font>: <em data-base="+4"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="4" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="5"><img src="../icons/siren-cataclysm-9.png">
+				<div class="description shortTier4Description"><h2>Boiling Point</h2>Shooting an enemy with <font style="color:#ffd47d;">elemental weapons</font> grants a stacking bonus to <font style="color:#ffd47d;">damage</font> and <font style="color:#ffd47d;">chance</font> to your elemental status effects. This bonus can stack up to 5 times.<br><font style="color:#00b4b4;">Elemental Effect Damage</font>: <em data-base="+4"></em>%<br><font style="color:#00b4b4;">Elemental Effect Chance</font>: <em data-base="+4"></em>%<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill push2" data-points="0" data-max="1"><img src="../icons/assassin-cunning-3.png">
+				<div class="description shortTier4Description"><h2>Deceiving Blow</h2><font style="color:#dedb35;">Melee Overdrive.</font> While <font style="color:#ffd47d;">Infiltrate</font> is active and a target is under your crosshairs, press <font style="color:#dedb35;">[Melee]</font> to <font style="color:#ffd47d;">dash forward</font> a short distance and perform a <font style="color:#ffd47d;">special melee strike</font>, dealing <font style="color:#ffd47d;">slag</font> damage. In addition, it has a 100% chance to <font style="color:#ffd47d;">slag</font> your target.<br><font style="color:#00b4b4;">Deceiving Blow Range</font>: <em data-base="3"></em> meters<span class="perLevel"></span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="5" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="../icons/assassin-cunning-9.png">
+				<div class="description"><h2>Tainted Strike</h2><font style="color:#d09cdb;">Action Skill Augment.</font> Press <font style="color:#d09cdb;">[ActionSkill]</font> while <font style="color:#ffd47d;">Infiltrate</font> is active to throw a handful of corrosive kunai. Kunai benefit from all your <font style="color:#ffd47d;">elemental</font> damage bonuses and throwing kunai does not end <font style="color:#ffd47d;">Infiltrate</font>.<br><font style="color:#00b4b4;">May throw kunai 5 times per cooldown.</font></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="totalPoints">
+			<span class="totalPoints">0</span>
+		</div>
+		<legend>Inquiry</legend>
+	</div>
+</div>
+</div>
+	
+<div class="summary">
+	<h2 style="color:#aaaaaa;">List of Skills:</h2>
+	<div class="descriptionContainer"></div>
+	<div class="footer">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. <a href="https://www.google.com/webfonts" target="_blank">Fonts</a> by Google. Made by <a href="https://github.com/Lupci">Lupci</a>, based on this <a href="https://github.com/seigler/bl2skills.com">Source Code</a>.</div>
+	<h6 style="color:#00b4b4;">I am here now<br>Hidden in a silent Mist<br>Like a Schaduw, heh</h6>	
+</div>
+</body>
+</html>

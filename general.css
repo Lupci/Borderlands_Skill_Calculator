@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-image: url("background.jpg");
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	cursor: default;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 40pt;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  margin-top: 16px;
+}
+
+h2{
+	font-size: 24pt;
+	color: black;
+}
+
+.tittle h1{
+	color:yellow;
+}
+
+.game{
+	vertical-align:center;
+}
+
+.game a{
+	display: inline-block;
+	margin: 10px;
+	border: 2px solid lightblue;
+	padding: 10px;
+	text-decoration: none;
+}
