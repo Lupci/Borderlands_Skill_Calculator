@@ -9,13 +9,12 @@ html{
 }
 
 body{
-	display: flex;
-	flex-direction: column;
 	background-image: url("background.jpg");
 	background-size: cover;
 	font-family: 'Lato', sans-serif;
 	cursor: default;
 	text-align: center;
+	height:100%;
 }
 
 h1,
@@ -34,21 +33,25 @@ h1{
 
 h2{
 	font-size: 24pt;
-	color: black;
 }
 
-.tittle h1{
+.tittle{
 	color:yellow;
 }
 
 .game{
-	vertical-align:center;
+	position:relative;
+	vertical-align:middle;
+	text-align:center;
 }
 
 .game a{
-	display: inline-block;
+	display: inline-table;
 	margin: 10px;
 	border: 2px solid lightblue;
 	padding: 10px;
 	text-decoration: none;
+	vertical-align:middle;
+	color:black;
+	position:relative;
 }
