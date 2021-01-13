@@ -3,84 +3,100 @@
 <head>
 	<meta charset="utf-8">
 	<title>Borderlands 2 Skill Calculator: Commando</title>
-	<link href='../../main.css' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="../../skillManager.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href='../../../general.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-
-<div class="header">
-	<div class="links"><a class="reset" href="exodus.html">&lt; go back</a> | <a href="commando.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
-	<h1>Borderlands <em>2</em> skill calculator <div class="stamp">(Exodus)</div></h1>
-	<h2>Axton</h2>
-	<h3>Level <span class="charLevel">5</span> Commando</h3>
-</div>
-<img unselectable="on" class="portrait" src="../../commandoPortrait.png">
-<div>
-	<div class="actionSkill"><img src="../../icons/commando-actionskill.png" />
-		<div class="description"><h2>Sabre Turret</h2><font style="color:#d09cdb;">Action Skill.</font> Deploy a<font style="color:#d09cdb;"> Sabre Turret</font> that automatically fires at enemies. When you're near the<font style="color:#d09cdb;"> Sabre Turret</font> you can reclaim it and refund some of your Cooldown.<br><font style="color:#00b4b4;">Cooldown</font>: 42 seconds.</div>
-		<div class="points">1/1</div>
-	</div><br><br>
-	<div class="actionSkill">
-	<h2>Hidden Ability</h2>
-		<div class="description"><h2>Class Modifiers</h2><font style="color:#ffd47d;">None</font> <font style="color:#38b833;"></font></div>
+<body class="font-monospace" style="background-image: url(../../../background.jpg);background-repeat: no-repeat;background-size: cover;">
+	<div class="container">
+		<div class="text-center text-warning p-4 pt-0">
+			<h1 class="display-1"><strong style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;"><abbr title="Made by Lupci" style="text-decoration: none;">Borderlands 2</abbr></strong></h1>
+			<h2 class=""><strong style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;"><a class="text-warning" href="exodus.html" style="text-decoration: none;">&#60;Custom VH Skill Calculator</a></strong></h2>
+			<h2 class="" style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;color:orange;">Commando Level <span class="vhLevel">5</span></h2>
+		</div>
 	</div>
-</div>
-<div class="treeCollection">
-<div class="treewrapper green">
-	<div class="bglayer gray"></div>
-	<div class="bglayer color"></div>
-	<div class="tree">
+	<section class="links text-center">
+		<a href="assassin.html" class="p-2">RESET</a>
+		<button type="button p-2" style="border: none;font-size: inherit;padding: 6px;" class="btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="#" title="Copy to clipboard">
+			COPY LINK
+		</button>
+		<!-- <a href="#" class="p-2" id="copy-button" type="button" data-toggle="tooltip" data-placement="button" title="Copy to Clipboard">COPY LINK</a> -->
+	</section>
+
+
+	<br>
+<section>
+	<!-- <img unselectable="on" class="portrait" src="../../commandoPortrait.png"> -->
+</section>
+	<div class="container" style="position: relative;width: 350px;">
+		<div class="actionSkill1" style="text-align:center">
+			<img src="../../../icons/commando-actionskill.png">
+			<div class="actionSkill">
+				<div class="description">
+					<h2>Sabre Turret</h2><font style="color:#d09cdb;">Action Skill.</font> Deploy a<font style="color:#d09cdb;"> Sabre Turret</font> that automatically fires at enemies. When you're near the<font style="color:#d09cdb;"> Sabre Turret</font> you can reclaim it and refund some of your Cooldown.<br><font style="color:#00b4b4;">Cooldown</font>: 42 seconds.
+				</div>
+				<div class="points">1/1</div>
+			</div>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+	<div class="container">
+		<div class="row align-items-start">
+<!-- green -->
+		<div class="greenTree col m-2">
+			<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-0.png">
-				<div class="description"><h2>Sentry</h2>Increased <font style="color:#ffd47d;">burst</font> and <font style="color:#ffd47d;">duration</font> for<font style="color:#d09cdb;"> Sabre Turret</font>.<br><font style="color:#00b4b4;">Turret Burst</font>: <em data-base="+1"></em><br><font style="color:#00b4b4;">Duration</font>: <em data-base="+2"></em>s</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-0.png">
+				<div class="actionSkill description"><h2>Sentry</h2>Increased <font style="color:#ffd47d;">burst</font> and <font style="color:#ffd47d;">duration</font> for<font style="color:#d09cdb;"> Sabre Turret</font>.<br><font style="color:#00b4b4;">Turret Burst</font>: <em data-base="+1"></em><br><font style="color:#00b4b4;">Duration</font>: <em data-base="+2"></em>s</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-1.png">
-				<div class="description"><h2>Ready</h2>Increases <font style="color:#ffd47d;">Reload Speed</font>.<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+8"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-1.png">
+				<div class="actionSkill description"><h2>Ready</h2>Increases <font style="color:#ffd47d;">Reload Speed</font>.<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+8"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-2.png">
-				<div class="description"><h2>Laser Sight</h2>Increases <font style="color:#ffd47d;">Turret Accuracy</font> And <font style="color:#ffd47d;">Turret Damage</font>.<br><font style="color:#00b4b4;">Turret Accuracy</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Turret Damage</font>: <em data-base="+10"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-2.png">
+				<div class="actionSkill description"><h2>Laser Sight</h2>Increases <font style="color:#ffd47d;">Turret Accuracy</font> And <font style="color:#ffd47d;">Turret Damage</font>.<br><font style="color:#00b4b4;">Turret Accuracy</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Turret Damage</font>: <em data-base="+10"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-3.png">
-				<div class="description"><h2>Willing</h2>Improved <font style="color:#ffd47d;">Shield Recharge Rate</font> and <font style="color:#ffd47d;">Shield Recharge Delay</font>.<br><font style="color:#00b4b4;">Shield Recharge Rate</font>: <em data-base="+15"></em>%<br><font style="color:#00b4b4;">Shield Recharge Delay</font>: <em data-base="-12"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-3.png">
+				<div class="actionSkill description"><h2>Willing</h2>Improved <font style="color:#ffd47d;">Shield Recharge Rate</font> and <font style="color:#ffd47d;">Shield Recharge Delay</font>.<br><font style="color:#00b4b4;">Shield Recharge Rate</font>: <em data-base="+15"></em>%<br><font style="color:#00b4b4;">Shield Recharge Delay</font>: <em data-base="-12"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-4.png">
-				<div class="description"><h2>Onslaught</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy gives you <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Movement Speed</font> for a short time.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+12"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-4.png">
+				<div class="actionSkill description"><h2>Onslaught</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy gives you <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Movement Speed</font> for a short time.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+12"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-guerilla-5.png">
-				<div class="description"><h2>Scorched Earth</h2>Adds <font style="color:#ffd47d;">Multi-Rocket Pods</font> to your<font style="color:#d09cdb;"> Sabre Turret</font>.<br><font style="color:#00b4b4;">Rockets per Volley</font>: <em data-base="22"></em></div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-guerilla-5.png">
+				<div class="actionSkill description"><h2>Scorched Earth</h2>Adds <font style="color:#ffd47d;">Multi-Rocket Pods</font> to your<font style="color:#d09cdb;"> Sabre Turret</font>.<br><font style="color:#00b4b4;">Rockets per Volley</font>: <em data-base="22"></em></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-6.png">
-				<div class="description"><h2>Able</h2>Damaging an enemy regenerates part of your <font style="color:#ffd47d;">Maximum Health</font> per second for 3 seconds.<br><font style="color:#00b4b4;">Health Regen</font>: <em data-base="+0.4"></em>%/s</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-6.png">
+				<div class="actionSkill description"><h2>Able</h2>Damaging an enemy regenerates part of your <font style="color:#ffd47d;">Maximum Health</font> per second for 3 seconds.<br><font style="color:#00b4b4;">Health Regen</font>: <em data-base="+0.4"></em>%/s</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-7.png">
-				<div class="description"><h2>Grenadier</h2>Increases <font style="color:#ffd47d;">Grenade Capacity</font> and reduces <font style="color:#ffd47d;">Grenade Fuse Time</font>.<br><font style="color:#00b4b4;">Grenade Capacity</font>:<em data-base="+1"></em><br><font style="color:#00b4b4;">Grenade Fuse Time</font>:<em data-base="-5"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-7.png">
+				<div class="actionSkill description"><h2>Grenadier</h2>Increases <font style="color:#ffd47d;">Grenade Capacity</font> and reduces <font style="color:#ffd47d;">Grenade Fuse Time</font>.<br><font style="color:#00b4b4;">Grenade Capacity</font>:<em data-base="+1"></em><br><font style="color:#00b4b4;">Grenade Fuse Time</font>:<em data-base="-5"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-guerilla-8.png">
-				<div class="description"><h2>Crisis Management</h2>Increases <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font> when shields are depleted.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+7"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+10"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-guerilla-8.png">
+				<div class="actionSkill description"><h2>Crisis Management</h2>Increases <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font> when shields are depleted.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+7"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+10"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="../../icons/commando-guerilla-9.png">
-				<div class="description"><h2>Double Up</h2>Adds a <font style="color:#ffd47d;">second gun</font> to the<font style="color:#d09cdb;"> Sabre Turret</font> and both guns fire <font style="color:#ffd47d;">Slag bullets</font>.</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="1"><img src="../../../icons/commando-guerilla-9.png">
+				<div class="actionSkill description"><h2>Double Up</h2>Adds a <font style="color:#ffd47d;">second gun</font> to the<font style="color:#d09cdb;"> Sabre Turret</font> and both guns fire <font style="color:#ffd47d;">Slag bullets</font>.</div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -90,63 +106,62 @@
 		<legend>Guerilla</legend>
 	</div>
 </div>
-<div class="treewrapper blue">
-	<div class="bglayer gray"></div>
-	<div class="bglayer color"></div>
+<!-- blue -->
+<div class="blueTree col m-2">
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-0.png">
-				<div class="description"><h2>Impact</h2>Increases <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+4"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+3"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-0.png">
+				<div class="actionSkill description"><h2>Impact</h2>Increases <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+4"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+3"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-1.png">
-				<div class="description"><h2>Expertise</h2>Improved <font style="color:#ffd47d;">Weapon Swap Speed</font> and <font style="color:#ffd47d;">Aim Speed</font>, and <font style="color:#ffd47d;">Movement Speed</font> when aiming.<br><font style="color:#00b4b4;">Weapon Swap Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">Aim Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">ADS Movement Speed</font>: <em data-base="+7"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-1.png">
+				<div class="actionSkill description"><h2>Expertise</h2>Improved <font style="color:#ffd47d;">Weapon Swap Speed</font> and <font style="color:#ffd47d;">Aim Speed</font>, and <font style="color:#ffd47d;">Movement Speed</font> when aiming.<br><font style="color:#00b4b4;">Weapon Swap Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">Aim Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">ADS Movement Speed</font>: <em data-base="+7"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-2.png">
-				<div class="description"><h2>Overload</h2><font style="color:#ffd47d;">Magazine Size</font> and <font style="color:#ffd47d;">ammo carrying capacity</font> for <font style="color:#ffd47d;">Assault Rifles</font>.<br><font style="color:#00b4b4;">AR Magazine Size</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">AR Ammo Backpack</font>: <em data-base="+5"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-2.png">
+				<div class="actionSkill description"><h2>Overload</h2><font style="color:#ffd47d;">Magazine Size</font> and <font style="color:#ffd47d;">ammo carrying capacity</font> for <font style="color:#ffd47d;">Assault Rifles</font>.<br><font style="color:#00b4b4;">AR Magazine Size</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">AR Ammo Backpack</font>: <em data-base="+5"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-3.png">
-				<div class="description"><h2>Metal Storm</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy provides <font style="color:#ffd47d;">Fire Rate</font> and <font style="color:#ffd47d;">Recoil Reduction</font> for a short time.<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+12"></em>%<br><font style="color:#00b4b4;">Recoil Reduction</font>: <em data-base="+15"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-3.png">
+				<div class="actionSkill description"><h2>Metal Storm</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy provides <font style="color:#ffd47d;">Fire Rate</font> and <font style="color:#ffd47d;">Recoil Reduction</font> for a short time.<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+12"></em>%<br><font style="color:#00b4b4;">Recoil Reduction</font>: <em data-base="+15"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-4.png">
-				<div class="description"><h2>Steady</h2>Increases <font style="color:#ffd47d;">Recoil Reduction</font>, <font style="color:#ffd47d;">Grenade Damage</font> and <font style="color:#ffd47d;">Rocket Launcher Damage</font>.<br><font style="color:#00b4b4;">Recoil Reduction</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Rocket L. Damage</font>: <em data-base="+4"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-4.png">
+				<div class="actionSkill description"><h2>Steady</h2>Increases <font style="color:#ffd47d;">Recoil Reduction</font>, <font style="color:#ffd47d;">Grenade Damage</font> and <font style="color:#ffd47d;">Rocket Launcher Damage</font>.<br><font style="color:#00b4b4;">Recoil Reduction</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Rocket L. Damage</font>: <em data-base="+4"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-gunpowder-5.png">
-				<div class="description"><h2>Longbow Turret</h2>Better <font style="color:#ffd47d;">Turret Deploy Range</font> and <font style="color:#ffd47d;">Turret Health</font>.<br><font style="color:#00b4b4;">Deploy Range</font>: <em data-base="+10000"></em>%<br><font style="color:#00b4b4;">Turret Health</font>: <em data-base="+110"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-gunpowder-5.png">
+				<div class="actionSkill description"><h2>Longbow Turret</h2>Better <font style="color:#ffd47d;">Turret Deploy Range</font> and <font style="color:#ffd47d;">Turret Health</font>.<br><font style="color:#00b4b4;">Deploy Range</font>: <em data-base="+10000"></em>%<br><font style="color:#00b4b4;">Turret Health</font>: <em data-base="+110"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-6.png">
-				<div class="description"><h2>Battlefront</h2>Increases <font style="color:#ffd47d;">Gun Damage</font>, <font style="color:#ffd47d;">Melee Damage</font> and <font style="color:#ffd47d;">Grenade Damage</font> while turret is deployed.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+6"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-6.png">
+				<div class="actionSkill description"><h2>Battlefront</h2>Increases <font style="color:#ffd47d;">Gun Damage</font>, <font style="color:#ffd47d;">Melee Damage</font> and <font style="color:#ffd47d;">Grenade Damage</font> while turret is deployed.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+6"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-7.png">
-				<div class="description"><h2>Duty Calls</h2>Increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Fire Rate</font> with <font style="color:#ffd47d;">non-elemental</font> guns.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+3"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-7.png">
+				<div class="actionSkill description"><h2>Duty Calls</h2>Increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Fire Rate</font> with <font style="color:#ffd47d;">non-elemental</font> guns.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+3"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-gunpowder-8.png">
-				<div class="description"><h2>Do or Die</h2>Allows you to <font style="color:#ffd47d;">throw grenades</font> while in <font style="color:#ffd47d;">Fight for Your Life</font>.<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Rocket L. Damage</font>: <em data-base="+10"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-gunpowder-8.png">
+				<div class="actionSkill description"><h2>Do or Die</h2>Allows you to <font style="color:#ffd47d;">throw grenades</font> while in <font style="color:#ffd47d;">Fight for Your Life</font>.<br><font style="color:#00b4b4;">Grenade Damage</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">Rocket L. Damage</font>: <em data-base="+10"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier push1" data-level="4" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-gunpowder-9.png">
-				<div class="description"><h2>Ranger</h2><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Accuracy</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Magazine Size</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+2"></em>%.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-gunpowder-9.png">
+				<div class="actionSkill description"><h2>Ranger</h2><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Accuracy</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Magazine Size</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+2"></em>%.</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier push1" data-level="5" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-gunpowder-10.png">
-				<div class="description"><h2>Nuke</h2>Deploying your <font style="color:#d09cdb;">Sabre Turret</font> sets off a small <font style="color:#ffd47d;">Nuclear Blast</font>.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-gunpowder-10.png">
+				<div class="actionSkill description"><h2>Nuke</h2>Deploying your <font style="color:#d09cdb;">Sabre Turret</font> sets off a small <font style="color:#ffd47d;">Nuclear Blast</font>.</div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -156,63 +171,62 @@
 		<legend>Gunpowder</legend>
 	</div>
 </div>
-<div class="treewrapper red">
-	<div class="bglayer gray"></div>
-	<div class="bglayer color"></div>
+<!-- red -->
+<div class="redTree col m-2">
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-0.png">
-				<div class="description"><h2>Healthy</h2><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+6"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-0.png">
+				<div class="actionSkill description"><h2>Healthy</h2><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+6"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-survival-1.png">
-				<div class="description"><h2>Preparation</h2>Increased <font style="color:#ffd47d;">Shield Capacity</font>, and gain <font style="color:#ffd47d;">Health Regeneration</font> when shields are full.<br><font style="color:#00b4b4;">Shield Capacity</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Health Regen</font>: <em data-base="+0.4"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-survival-1.png">
+				<div class="actionSkill description"><h2>Preparation</h2>Increased <font style="color:#ffd47d;">Shield Capacity</font>, and gain <font style="color:#ffd47d;">Health Regeneration</font> when shields are full.<br><font style="color:#00b4b4;">Shield Capacity</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Health Regen</font>: <em data-base="+0.4"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-2.png">
-				<div class="description"><h2>Last Ditch Effort</h2>Increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Movement Speed</font> during <font style="color:#ffd47d;">Fight for Your Life</font>. Increased <font style="color:#ffd47d;">Fight for Your Life Time</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">FFYL Time</font>: <em data-base="+5"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-2.png">
+				<div class="actionSkill description"><h2>Last Ditch Effort</h2>Increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Movement Speed</font> during <font style="color:#ffd47d;">Fight for Your Life</font>. Increased <font style="color:#ffd47d;">Fight for Your Life Time</font>.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+14"></em>%<br><font style="color:#00b4b4;">FFYL Time</font>: <em data-base="+5"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/commando-survival-3.png">
-				<div class="description"><h2>Pressure</h2>Improved <font style="color:#ffd47d;">Reload Speed</font> and <font style="color:#ffd47d;">Shield Recharge Delay</font> depending on how low your health is.<br><font style="color:#00b4b4;">Reload Speed</font>: up to <em data-base="+14"></em>%<br><font style="color:#00b4b4;">Shield R. Rate</font>: up to <em data-base="-12"></em>%</div>
+			<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/commando-survival-3.png">
+				<div class="actionSkill description"><h2>Pressure</h2>Improved <font style="color:#ffd47d;">Reload Speed</font> and <font style="color:#ffd47d;">Shield Recharge Delay</font> depending on how low your health is.<br><font style="color:#00b4b4;">Reload Speed</font>: up to <em data-base="+14"></em>%<br><font style="color:#00b4b4;">Shield R. Rate</font>: up to <em data-base="-12"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-4.png">
-				<div class="description"><h2>Forbearance</h2>Reduces <font style="color:#ffd47d;">Status Effect Duration</font> on you; increased <font style="color:#ffd47d;">Maximum Health</font>.<br><font style="color:#00b4b4;">Status Effect Duration</font>: <em data-base="-8"></em>%<br><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+3"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-4.png">
+				<div class="actionSkill description"><h2>Forbearance</h2>Reduces <font style="color:#ffd47d;">Status Effect Duration</font> on you; increased <font style="color:#ffd47d;">Maximum Health</font>.<br><font style="color:#00b4b4;">Status Effect Duration</font>: <em data-base="-8"></em>%<br><font style="color:#00b4b4;">Maximum Health</font>: <em data-base="+3"></em>%</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-survival-5.png">
-				<div class="description"><h2>Phalanx Shield</h2>Your<font style="color:#d09cdb;"> Sabre Turret</font> projects a <font style="color:#ffd47d;">Shield</font> that attempts to block enemy ranged fire but lets friendly ranged attacks pass through.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-survival-5.png">
+				<div class="actionSkill description"><h2>Phalanx Shield</h2>Your<font style="color:#d09cdb;"> Sabre Turret</font> projects a <font style="color:#ffd47d;">Shield</font> that attempts to block enemy ranged fire but lets friendly ranged attacks pass through.</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-6.png">
-				<div class="description"><h2>Quick Charge</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy provides <font style="color:#ffd47d;">Shield Regeneration</font> for a short time.<br><font style="color:#00b4b4;">Shield Regeneration</font>: <em data-base="+1"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-6.png">
+				<div class="actionSkill description"><h2>Quick Charge</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy provides <font style="color:#ffd47d;">Shield Regeneration</font> for a short time.<br><font style="color:#00b4b4;">Shield Regeneration</font>: <em data-base="+1"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-7.png">
-				<div class="description"><h2>Resourceful</h2><em data-base="+5"></em>% Action Skill <font style="color:#ffd47d;">Cooldown Rate</font>.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-7.png">
+				<div class="actionSkill description"><h2>Resourceful</h2><em data-base="+5"></em>% Action Skill <font style="color:#ffd47d;">Cooldown Rate</font>.</div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-survival-8.png">
-				<div class="description"><h2>Mag-Lock</h2>Your<font style="color:#d09cdb;"> Sabre Turret</font> can be deployed on walls and ceilings.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-survival-8.png">
+				<div class="actionSkill description"><h2>Mag-Lock</h2>Your<font style="color:#d09cdb;"> Sabre Turret</font> can be deployed on walls and ceilings.</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier push1" data-level="4" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/commando-survival-9.png">
-				<div class="description"><h2>Grit</h2>You have a chance to ignore damage that would otherwise kill you. In addition to not taking damage from the attack, you will also regain half your <font style="color:#ffd47d;">Maximum Health</font>.<br><font style="color:#00b4b4;">Chance</font>: <em data-base="4"></em>%</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/commando-survival-9.png">
+				<div class="actionSkill description"><h2>Grit</h2>You have a chance to ignore damage that would otherwise kill you. In addition to not taking damage from the attack, you will also regain half your <font style="color:#ffd47d;">Maximum Health</font>.<br><font style="color:#00b4b4;">Chance</font>: <em data-base="4"></em>%</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier push1" data-level="5" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/commando-survival-10.png">
-				<div class="description"><h2>Gemini</h2>Allows you to deploy two<font style="color:#d09cdb;"> Sabre Turret</font>s.</div>
+			<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/commando-survival-10.png">
+				<div class="actionSkill description"><h2>Gemini</h2>Allows you to deploy two<font style="color:#d09cdb;"> Sabre Turret</font>s.</div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -224,12 +238,16 @@
 </div>
 </div>
 
-<div class="summary">
-	<h2 style="color:#aaaaaa;">List of Skills:</h2>
-	<div class="descriptionContainer"></div>
-	<div class="footer">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. <a href="https://www.google.com/webfonts" target="_blank">Fonts</a> by Google. Made by <a href="https://github.com/Lupci">Lupci</a>, based on this <a href="https://github.com/seigler/bl2skills.com">Source Code</a>.</div>
-	<h6 style="color:#00b4b4;">I am here now<br>Hidden in a silent Mist<br>Like a Schaduw, heh</h6>	
-</div>
+<br>
+<br>
 
+<footer class="text-center text-warning">
+	<small class="text-center">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. Made by <a href="https://github.com/Lupci">Lupci</a>.</small>
+	<br>
+    <small>All things herein are the properties of their respective owners.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="../../../java.js"></script> <!-- script for skill tree needed, idk what to do -->
 </body>
 </html>

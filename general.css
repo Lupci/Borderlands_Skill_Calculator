@@ -1,57 +1,139 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+.pathLink {
+	background: rgba(0, 0, 0, 0.5);
+}
+  
+.pathLink:hover,.social:hover {
+	background: black;
 }
 
-html{
-	overflow-y: scroll;
+ .notallowed {
+	cursor: not-allowed;
 }
 
-body{
-	background-image: url("background.jpg");
-	background-size: cover;
-	font-family: 'Lato', sans-serif;
-	cursor: default;
-	text-align: center;
-	height:100%;
+.social {
+	background: rgba(0, 0, 0, 0.69);
+	color:red;
+}
+  
+.pathLink:hover,.social:hover,.social1,.social1:hover {
+	background: black;
+	color:red;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: normal;
+.social1{
+	pointer-events:none;
 }
-
-h1{
-  font-size: 40pt;
-  text-transform: uppercase;
-  padding-bottom: 2px;
-  margin-top: 16px;
+.links{
+	font-size: larger;
 }
-
-h2{
-	font-size: 24pt;
-}
-
-.tittle{
-	color:yellow;
-}
-
-.game{
-	position:relative;
-	vertical-align:middle;
-	text-align:center;
-}
-
-.game a{
-	display: inline-table;
-	margin: 10px;
-	border: 2px solid lightblue;
-	padding: 10px;
+section a,section button {
 	text-decoration: none;
-	vertical-align:middle;
-	color:black;
-	position:relative;
+	color: red;
+	font-weight: 600;
+	text-shadow: black;
+	background-image: linear-gradient(0.56turn, #f7f200 20%, #f78400 60%);
+	border-radius: 10%;
+	text-shadow:
+	-1px -1px 0 black,  
+	1px -1px 0 black,
+	-1px 1px 0 black,
+	1px 1px 0 black;
 }
+section a:hover, section button:hover{
+	color:purple;
+}
+.overlay-position{
+	float: left;
+}
+.overlay-position-r{
+	float: right;
+}
+footer small a{
+	text-decoration: none;
+	color: orange;
+}
+footer small a:hover{
+	color:orangered;
+	font-weight: 800;
+}
+.greenTree,.blueTree,.redTree{
+	width: 33%;
+}
+.greenTree .tree{
+	background-image: url(img/skill_green_gray.png);
+}
+.blueTree .tree{
+	background-image: url(img/skill_blue_gray.png);
+}
+.redTree .tree{
+	background-image: url(img/skill_red_gray.png);
+}
+.points{
+	color: greenyellow;
+	background-image:url(icons/points_overlay.png);
+	float: right;
+	padding-right: 13px;
+	position: relative;
+	margin-top: -20px;
+}
+/* .actionSkill{
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	background-color: rgb(41, 46, 46);
+}
+.description{
+	color: whitesmoke;
+} */
+/* Tooltip container */
+.actionSkill1 {
+	position: absolute;
+	display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .actionSkill1 .actionSkill {
+	visibility: hidden;
+	width: 320px;
+	background-color: #555;
+	background-color: #0f0f0f;
+	color: #fff;
+	color:rgb(250, 250, 250);
+	text-align: center;
+	border-radius: 6px;
+    
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+    
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .actionSkill1:hover .actionSkill {
+	visibility: visible;
+	opacity: 1;
+  }
+
+  
+.skill {
+  padding: 3px;
+  width: 52px;
+  height: 53px;
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+
+.skill>img {
+  width: 52px;
+  height: 53px;
+}
+
+.push1 {
+	margin-left: 58px;
+  }
+  .tree{
+	  width: 60%;
+	  margin: auto;
+	  padding: 1.5em;
+	  padding-left: 2.5em;
+  }
