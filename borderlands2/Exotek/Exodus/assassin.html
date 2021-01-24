@@ -2,26 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Borderlands 2 Skill Calculator: Assassin</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link href='../../../general.css' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Borderlands 2 Skill Calculator</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link href='../../../css/lupci.css' rel='stylesheet' type='text/css'>
 	</head>
-	<body class="font-monospace" style="background-image: url(../../../background.jpg);background-repeat: no-repeat;background-size: cover;">
-		<div class="container">
-			<div class="text-center text-warning p-4 pt-0">
-				<h1 class="display-1"><strong style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;"><abbr title="Made by Lupci" style="text-decoration: none;">Borderlands 2</abbr></strong></h1>
-				<h2 class=""><strong style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;"><a class="text-warning" href="exodus.html" style="text-decoration: none;">&#60;Custom VH Skill Calculator</a></strong></h2>
-				<h2 class="" style="text-shadow: -1px -1px 1px #000, 2px 2px 2px #000;color:orange;">Assassin Level <span class="vhLevel">5</span></h2>
-			</div>
+	<body>
+        <!-- BANNER -->
+		<div class="banner">
+			<h1><strong><abbr title="Made by Lupci">Borderlands 2</abbr></strong></h1>
+			<h2><strong><a href="exodus.html">&#60;Custom VH Skill Calculator</a></strong></h2>
+			<h2>Zer0</h2>
+			<h3>Level <span class="charLevel">5</span> Assassin</h3>
 		</div>
-	<section class="links text-center">
-		<a href="assassin.html" class="p-2">RESET</a>
-		<button type="button p-2" style="border: none;font-size: inherit;padding: 6px;" class="btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="#" title="Copy to clipboard">
-			COPY LINK
-		</button>
-		<!-- <a href="#" class="p-2" id="copy-button" type="button" data-toggle="tooltip" data-placement="button" title="Copy to Clipboard">COPY LINK</a> -->
-	</section>
+		<div class="resetTree">
+			<a href="#">Reset</a>
+		</div>
+
+
 
 	<br>
 <section>
@@ -33,7 +31,7 @@
 			<img src="../../../icons/assassin-actionskill.png">
 			<div class="actionSkill">
 				<div class="description">
-					<h2>Decepti0n</h2><font style="color:#d09cdb;">Action Skill.</font> Create a <font style="color:#ffd47d;">holographic decoy</font> and vanish for a few seconds. The longer you are invisible the more <font style="color:#ffd47d;">Damage</font> your next attack deals, but ending invisibility sooner causes your next <font style="color:#ffd47d;">Deception Cooldown</font> to refresh faster.<br><font style="color:#00b4b4;">Cooldown</font>: 15 seconds<br><font style="color:#00b4b4;">Melee Damage</font>: up to 650%<br><font style="color:#00b4b4;">Gun Damage</font>: up to 200%
+					<h2>Decepti0n</h2><span class="pinkText">Action Skill.</span> Create a <span class="yellowText">holographic decoy</span> and vanish for a few seconds. The longer you are invisible the more <span class="yellowText">Damage</span> your next attack deals, but ending invisibility sooner causes your next <span class="yellowText">Deception Cooldown</span> to refresh faster.<br><span class="blueText">Cooldown</span>: 15 seconds<br><span class="blueText">Melee Damage</span>: up to 650%<br><span class="blueText">Gun Damage</span>: up to 200%
 				</div>
 				<div class="points">1/1</div>
 			</div>
@@ -50,60 +48,60 @@
 			<div class="tree">
 				<div class="tier" data-level="0" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-0.png">
-						<div class="actionSkill description"><h2>HeadSh0t</h2>Improves <font style="color:#ffd47d;">Critical Hit Damage</font>.<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+4"></em>%</div>
+						<div class="actionSkill description"><h2>HeadSh0t</h2>Improves <span class="yellowText">Critical Hit Damage</span>.<br><span class="blueText">Critical Hit Damage</span>: <em data-base="+4"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-1.png">
-						<div class="actionSkill description"><h2>0ptics</h2>Increases <font style="color:#ffd47d;">Zoom</font> and <font style="color:#ffd47d;">Aim Steadiness</font> <font style="color:#525252;font-size:75%;">(reduces aim disruption when taking damage)</font>.<br><font style="color:#00b4b4;">Zoom</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Aim Steadiness</font>: <em data-base="+12"></em>%</div>
+						<div class="actionSkill description"><h2>0ptics</h2>Increases <span class="yellowText">Zoom</span> and <span class="yellowText">Aim Steadiness</span> <font style="color:#525252;font-size:75%;">(reduces aim disruption when taking damage)</span>.<br><span class="blueText">Zoom</span>: <em data-base="+3"></em>%<br><span class="blueText">Aim Steadiness</span>: <em data-base="+12"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="1" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-2.png">
-						<div class="actionSkill description"><h2>Killer</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy gives you <font style="color:#ffd47d;">Critical Hit Damage</font> and <font style="color:#ffd47d;">Reload Speed</font> for a few seconds.<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+10"></em>%</div>
+						<div class="actionSkill description"><h2>Killer</h2><span class="redText">Kill Skill.</span> Killing an enemy gives you <span class="yellowText">Critical Hit Damage</span> and <span class="yellowText">Reload Speed</span> for a few seconds.<br><span class="blueText">Critical Hit Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Reload Speed</span>: <em data-base="+10"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-3.png">
-						<div class="actionSkill description"><h2>Precisi0n</h2>Increases <font style="color:#ffd47d;">Accuracy</font>.<br><font style="color:#00b4b4;">Accuracy</font>: <em data-base="+10"></em>%</div>
+						<div class="actionSkill description"><h2>Precisi0n</h2>Increases <span class="yellowText">Accuracy</span>.<br><span class="blueText">Accuracy</span>: <em data-base="+10"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="2" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-4.png">
-						<div class="actionSkill description"><h2>0ne Sh0t 0ne Kill</h2>The <font style="color:#ffd47d;">first shot</font> from a fully loaded magazine deals increased <font style="color:#ffd47d;">Damage</font>.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+12"></em>%</div>
+						<div class="actionSkill description"><h2>0ne Sh0t 0ne Kill</h2>The <span class="yellowText">first shot</span> from a fully loaded magazine deals increased <span class="yellowText">Damage</span>.<br><span class="blueText">Damage</span>: <em data-base="+12"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/assassin-sniping-5.png">
-						<div class="actionSkill description"><h2>B0re</h2>Shots <font style="color:#ffd47d;">pierce</font> through enemies, gaining <font style="color:#ffd47d;">damage per enemy pierced</font>. Enemy <font style="color:#ffd47d;">crit locations</font> highlighted in <font style="color:#d09cdb;">Decepti0n</font>.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+100"></em>%</div>
+						<div class="actionSkill description"><h2>B0re</h2>Shots <span class="yellowText">pierce</span> through enemies, gaining <span class="yellowText">damage per enemy pierced</span>. Enemy <span class="yellowText">crit locations</span> highlighted in <span class="pinkText">Decepti0n</span>.<br><span class="blueText">Damage</span>: <em data-base="+100"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-6.png">
-						<div class="actionSkill description"><h2>Vel0city</h2>Improved <font style="color:#ffd47d;">Bullet Speed</font>, <font style="color:#ffd47d;">Critical Hit Damage</font> and <font style="color:#ffd47d;">Gun Damage</font>.<br><font style="color:#00b4b4;">Bullet Speed</font>: <em data-base="+20"></em>%<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+3"></em>%<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+2"></em>%</div>
+						<div class="actionSkill description"><h2>Vel0city</h2>Improved <span class="yellowText">Bullet Speed</span>, <span class="yellowText">Critical Hit Damage</span> and <span class="yellowText">Gun Damage</span>.<br><span class="blueText">Bullet Speed</span>: <em data-base="+20"></em>%<br><span class="blueText">Critical Hit Damage</span>: <em data-base="+3"></em>%<br><span class="blueText">Gun Damage</span>: <em data-base="+2"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="3" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-7.png">
-						<div class="actionSkill description"><h2>Kill C0nfirmed</h2>Increases <font style="color:#ffd47d;">Critical Hit Damage</font> depending on how long you aim down the sights.<br><font style="color:#00b4b4;">Critical Hit Damage</font>: up to <em data-base="+20"></em>%</div>
+						<div class="actionSkill description"><h2>Kill C0nfirmed</h2>Increases <span class="yellowText">Critical Hit Damage</span> depending on how long you aim down the sights.<br><span class="blueText">Critical Hit Damage</span>: up to <em data-base="+20"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="4" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-sniping-8.png">
-						<div class="actionSkill description"><h2>At 0ne with the Gun</h2>Improves <font style="color:#ffd47d;">Hip-Shot accuracy</font>, <font style="color:#ffd47d;">Reload Speed</font> and increases <font style="color:#ffd47d;">Magazine Size</font> with Sniper Rifles.<br><font style="color:#00b4b4;">Hip-Shot Accuracy</font>: <em data-base="+25"></em>%<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+10"></em>%<br><font style="color:#00b4b4;">SR Mag Size</font>: <em data-base="+1"></em>%</div>
+						<div class="actionSkill description"><h2>At 0ne with the Gun</h2>Improves <span class="yellowText">Hip-Shot accuracy</span>, <span class="yellowText">Reload Speed</span> and increases <span class="yellowText">Magazine Size</span> with Sniper Rifles.<br><span class="blueText">Hip-Shot Accuracy</span>: <em data-base="+25"></em>%<br><span class="blueText">Reload Speed</span>: <em data-base="+10"></em>%<br><span class="blueText">SR Mag Size</span>: <em data-base="+1"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="5" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="1"><img src="../../../icons/assassin-sniping-9.png">
-						<div class="actionSkill description"><h2>Critical Ascensi0n</h2>Scoring a <font style="color:#ffd47d;">Critical Hit</font> with a Sniper Rifle increases your <font style="color:#ffd47d;">Critical Hit Damage</font> and <font style="color:#ffd47d;">Damage</font> with Sniper Rifles. Can stack up to 999 times and they begin to decay if you haven't scored a critical hit in a while.<br><font style="color:#00b4b4;">Critical Hit Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+5"></em>%</div>
+						<div class="actionSkill description"><h2>Critical Ascensi0n</h2>Scoring a <span class="yellowText">Critical Hit</span> with a Sniper Rifle increases your <span class="yellowText">Critical Hit Damage</span> and <span class="yellowText">Damage</span> with Sniper Rifles. Can stack up to 999 times and they begin to decay if you haven't scored a critical hit in a while.<br><span class="blueText">Critical Hit Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Damage</span>: <em data-base="+5"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="totalPoints">
 					<span class="totalPoints">0</span>
 				</div>
-				<legend>Sniping</legend>
+				<div class="treeName"><h5>Sniping</h5></div>
 			</div>
 		</div>
 <!-- blue -->
@@ -111,60 +109,60 @@
 			<div class="tree">
 				<div class="tier" data-level="0" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-0.png">
-						<div class="actionSkill description"><h2>Fast Hands</h2>Increased <font style="color:#ffd47d;">Reload Speed</font> and <font style="color:#ffd47d;">Weapon Swap Speed</font>.<br><font style="color:#00b4b4;">Reload Speed</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Weapon Swap Speed</font>: <em data-base="+10"></em>%</div>
+						<div class="actionSkill description"><h2>Fast Hands</h2>Increased <span class="yellowText">Reload Speed</span> and <span class="yellowText">Weapon Swap Speed</span>.<br><span class="blueText">Reload Speed</span>: <em data-base="+5"></em>%<br><span class="blueText">Weapon Swap Speed</span>: <em data-base="+10"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-1.png">
-						<div class="actionSkill description"><h2>C0unter Strike</h2>After <font style="color:#ffd47d;">getting hit</font>, your next melee attack has a <font style="color:#ffd47d;">chance</font> to deal increased damage.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+50"></em>%</div>
+						<div class="actionSkill description"><h2>C0unter Strike</h2>After <span class="yellowText">getting hit</span>, your next melee attack has a <span class="yellowText">chance</span> to deal increased damage.<br><span class="blueText">Damage</span>: <em data-base="+50"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="1" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-2.png">
-						<div class="actionSkill description"><h2>Fearless</h2>Increases <font style="color:#ffd47d;">Fire Rate</font> and <font style="color:#ffd47d;">Gun Damage</font> when your shield is depleted.<br><font style="color:#00b4b4;">Fire Rate</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+3"></em>%</div>
+						<div class="actionSkill description"><h2>Fearless</h2>Increases <span class="yellowText">Fire Rate</span> and <span class="yellowText">Gun Damage</span> when your shield is depleted.<br><span class="blueText">Fire Rate</span>: <em data-base="+5"></em>%<br><span class="blueText">Gun Damage</span>: <em data-base="+3"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-3.png">
-						<div class="actionSkill description"><h2>Ambush</h2>Deal more <font style="color:#ffd47d;">damage</font> when attacking enemies from <font style="color:#ffd47d;">behind</font> or when attacking an enemy who is targeting someone other than you.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+4"></em>%</div>
+						<div class="actionSkill description"><h2>Ambush</h2>Deal more <span class="yellowText">damage</span> when attacking enemies from <span class="yellowText">behind</span> or when attacking an enemy who is targeting someone other than you.<br><span class="blueText">Damage</span>: <em data-base="+4"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="2" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-4.png">
-						<div class="actionSkill description"><h2>Rising Sh0t</h2>Each successful ranged or melee attack gives you <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font> for a short time. This bonus can stack up to 5 times. Faster weapons can gain stacks more quickly, but slower weapons retain stacks for a longer period of time.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+2"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+1.8"></em>%</div>
+						<div class="actionSkill description"><h2>Rising Sh0t</h2>Each successful ranged or melee attack gives you <span class="yellowText">Gun Damage</span> and <span class="yellowText">Melee Damage</span> for a short time. This bonus can stack up to 5 times. Faster weapons can gain stacks more quickly, but slower weapons retain stacks for a longer period of time.<br><span class="blueText">Gun Damage</span>: <em data-base="+2"></em>%<br><span class="blueText">Melee Damage</span>: <em data-base="+1.8"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/assassin-cunning-5.png">
-						<div class="actionSkill description"><h2>Death Mark</h2>Dealing <font style="color:#ffd47d;">melee damage</font> marks a target for 8 seconds. Marked targets take additional <font style="color:#ffd47d;">damage</font> from all sources.<br><font style="color:#00b4b4;">Damage</font>: <em data-base="+80"></em>%</div>
+						<div class="actionSkill description"><h2>Death Mark</h2>Dealing <span class="yellowText">melee damage</span> marks a target for 8 seconds. Marked targets take additional <span class="yellowText">damage</span> from all sources.<br><span class="blueText">Damage</span>: <em data-base="+80"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-6.png">
-						<div class="actionSkill description"><h2>Unf0rseen</h2>Your <font style="color:#ffd47d;">holographic decoy</font> explodes when you become visible again, causing <font style="color:#ffd47d;">shock damage</font> to nearby enemies.<br><font style="color:#00b4b4;">Damage Level</font> <em data-base="1"></em></div>
+						<div class="actionSkill description"><h2>Unf0rseen</h2>Your <span class="yellowText">holographic decoy</span> explodes when you become visible again, causing <span class="yellowText">shock damage</span> to nearby enemies.<br><span class="blueText">Damage Level</span> <em data-base="1"></em></div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="3" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-7.png">
-						<div class="actionSkill description"><h2>Innervate</h2>While <font style="color:#d09cdb;">Decepti0n</font> is active you gain increased <font style="color:#ffd47d;">Elemental Status Effects</font> and Movement Speed. Additionally, you regenerate part of your Maximum Health per second.<br><font style="color:#00b4b4;">Elemental Status Effects</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+7"></em>%<br><font style="color:#00b4b4;">Health Regen</font>: <em data-base="+0.8"></em>%</div>
+						<div class="actionSkill description"><h2>Innervate</h2>While <span class="pinkText">Decepti0n</span> is active you gain increased <span class="yellowText">Elemental Status Effects</span> and Movement Speed. Additionally, you regenerate part of your Maximum Health per second.<br><span class="blueText">Elemental Status Effects</span>: <em data-base="+5"></em>%<br><span class="blueText">Movement Speed</span>: <em data-base="+7"></em>%<br><span class="blueText">Health Regen</span>: <em data-base="+0.8"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="4" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-cunning-8.png">
-						<div class="actionSkill description"><h2>Tw0 Fang</h2>Every time you fire you have a <font style="color:#ffd47d;">chance</font> to fire twice.<br><font style="color:#00b4b4;">Chance</font>: <em data-base="+6"></em>%</div>
+						<div class="actionSkill description"><h2>Tw0 Fang</h2>Every time you fire you have a <span class="yellowText">chance</span> to fire twice.<br><span class="blueText">Chance</span>: <em data-base="+6"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="5" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="1"><img src="../../../icons/assassin-cunning-9.png">
-						<div class="actionSkill description"><h2>Death Bl0ss0m</h2><font style="color:#d09cdb;">Action Skill Augment.</font> Throws a handful of <font style="color:#ffd47d;">Kunai knives</font>. Has a random elemental effect. Does not take character out of Decepti0n. Can be used five times per cooldown. Can apply Death Mark.</div>
+						<div class="actionSkill description"><h2>Death Bl0ss0m</h2><span class="pinkText">Action Skill Augment.</span> Throws a handful of <span class="yellowText">Kunai knives</span>. Has a random elemental effect. Does not take character out of Decepti0n. Can be used five times per cooldown. Can apply Death Mark.</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="totalPoints">
 					<span class="totalPoints">0</span>
 				</div>
-				<legend>Cunning</legend>
+				<div class="treeName"><h5>Cunning</h5></div>
 			</div>
 		</div>
 		<!-- red -->
@@ -172,76 +170,97 @@
 			<div class="tree">
 				<div class="tier" data-level="0" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-0.png">
-						<div class="actionSkill description"><h2>Killing Bl0w</h2><font style="color:#ffd47d;">Melee Damage</font> against enemies with low health is increased.<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+100"></em>%</div>
+						<div class="actionSkill description"><h2>Killing Bl0w</h2><span class="yellowText">Melee Damage</span> against enemies with low health is increased.<br><span class="blueText">Melee Damage</span>: <em data-base="+100"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-1.png">
-						<div class="actionSkill description"><h2>Ir0n Hand</h2>Increased <font style="color:#ffd47d;">Melee Damage</font> and <font style="color:#ffd47d;">Maximum Health</font>.<br><font style="color:#00b4b4;">Damage Level</font>: <em data-base="+5"></em>%<br><font style="color:#00b4b4;">Max Health</font>: <em data-base="+3"></em>%</div>
+						<div class="actionSkill description"><h2>Ir0n Hand</h2>Increased <span class="yellowText">Melee Damage</span> and <span class="yellowText">Maximum Health</span>.<br><span class="blueText">Damage Level</span>: <em data-base="+5"></em>%<br><span class="blueText">Max Health</span>: <em data-base="+3"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="1" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-2.png">
-						<div class="actionSkill description"><h2>Grim</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy regenerates part of your <font style="color:#ffd47d;">shield</font> per second and gives <font style="color:#ffd47d;">Action Skill cooldown rate</font> for a few seconds.<br><font style="color:#00b4b4;">Shield Regen</font>: <em data-base="+0.7"></em>%<br><font style="color:#00b4b4;">Cooldown Rate</font>: <em data-base="+1.5"></em>%</div>
+						<div class="actionSkill description"><h2>Grim</h2><span class="redText">Kill Skill.</span> Killing an enemy regenerates part of your <span class="yellowText">shield</span> per second and gives <span class="yellowText">Action Skill cooldown rate</span> for a few seconds.<br><span class="blueText">Shield Regen</span>: <em data-base="+0.7"></em>%<br><span class="blueText">Cooldown Rate</span>: <em data-base="+1.5"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-3.png">
-						<div class="actionSkill description"><h2>Be Like Water</h2><font style="color:#ffd47d;">Shooting</font> an enemy gives more damage to your next melee attack. <font style="color:#ffd47d;">Melee Attacks</font> give more damage to your next gun attack.<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+4"></em>%</div>
+						<div class="actionSkill description"><h2>Be Like Water</h2><span class="yellowText">Shooting</span> an enemy gives more damage to your next melee attack. <span class="yellowText">Melee Attacks</span> give more damage to your next gun attack.<br><span class="blueText">Melee Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Gun Damage</span>: <em data-base="+4"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="2" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-4.png">
-						<div class="actionSkill description"><h2>F0ll0wthr0ugh</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy gives more <font style="color:#ffd47d;">Movement Speed</font>, Gun Damage and Melee Damage for a few seconds.<br><font style="color:#00b4b4;">Movement Speed</font>: <em data-base="+8"></em>%<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+8"></em>%</div>
+						<div class="actionSkill description"><h2>F0ll0wthr0ugh</h2><span class="redText">Kill Skill.</span> Killing an enemy gives more <span class="yellowText">Movement Speed</span>, Gun Damage and Melee Damage for a few seconds.<br><span class="blueText">Movement Speed</span>: <em data-base="+8"></em>%<br><span class="blueText">Gun Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Melee Damage</span>: <em data-base="+8"></em>%</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="1"><img src="../../../icons/assassin-bloodshed-5.png">
-						<div class="actionSkill description"><h2>Execute</h2><font style="color:#dedb35;">Melee Override Skill.</font> While <font style="color:#d09cdb;">Decepti0n</font> is active and a target is under your crosshairs, melee to <font style="color:#ffd47d;">dash forward</font> a short distance and perform a special melee attack.<br><font style="color:#00b4b4;">Range</font>: <em data-base="3"></em> meters</div>
+						<div class="actionSkill description"><h2>Execute</h2><span class="purpleText">Melee Override Skill.</span> While <span class="pinkText">Decepti0n</span> is active and a target is under your crosshairs, melee to <span class="yellowText">dash forward</span> a short distance and perform a special melee attack.<br><span class="blueText">Range</span>: <em data-base="3"></em> meters</div>
 						<div class="points"></div>
 					</div>
 					<div class="actionSkill1 skill" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-6.png">
-						<div class="actionSkill description"><h2>Backstab</h2>Your <font style="color:#ffd47d;">melee attacks</font> deal more damage when hitting an enemy in the back, dealing massive damage.<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+8"></em>%</div>
+						<div class="actionSkill description"><h2>Backstab</h2>Your <span class="yellowText">melee attacks</span> deal more damage when hitting an enemy in the back, dealing massive damage.<br><span class="blueText">Melee Damage</span>: <em data-base="+8"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="3" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-7.png">
-						<div class="actionSkill description"><h2>Resurgence</h2><font style="color:#e02222;"><font style="color:#e02222;">Kill Skill.</font></font> Killing an enemy with a <font style="color:#ffd47d;">melee attack</font> restores part of your <font style="color:#ffd47d;">health</font> depending on how low your health is.<br><font style="color:#00b4b4;">Health Restored</font>: up to <em data-base="+8"></em>%</div>
+						<div class="actionSkill description"><h2>Resurgence</h2><span class="redText"><span class="redText">Kill Skill.</span></span> Killing an enemy with a <span class="yellowText">melee attack</span> restores part of your <span class="yellowText">health</span> depending on how low your health is.<br><span class="blueText">Health Restored</span>: up to <em data-base="+8"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="4" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="5"><img src="../../../icons/assassin-bloodshed-8.png">
-						<div class="actionSkill description shortTier4Description"><h2>Like The Wind</h2>Increased <font style="color:#ffd47d;">Gun Damage</font> and <font style="color:#ffd47d;">Melee Damage</font> when moving.<br><font style="color:#00b4b4;">Gun Damage</font>: <em data-base="+6"></em>%<br><font style="color:#00b4b4;">Melee Damage</font>: <em data-base="+6"></em>%</div>
+						<div class="actionSkill description shortTier4Description"><h2>Like The Wind</h2>Increased <span class="yellowText">Gun Damage</span> and <span class="yellowText">Melee Damage</span> when moving.<br><span class="blueText">Gun Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Melee Damage</span>: <em data-base="+6"></em>%</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="tier" data-level="5" data-invested="0" data-total="0">
 					<div class="actionSkill1 skill push1" data-points="0" data-max="1"><img src="../../../icons/assassin-bloodshed-9.png">
-						<div class="actionSkill description"><h2>Many Must Fall</h2><font style="color:#e02222;">Kill Skill.</font> Killing an enemy with a <font style="color:#ffd47d;">Melee Attack</font> during <font style="color:#d09cdb;">Decepti0n</font> deploys an additional holographic decoy and extends the duration of <font style="color:#d09cdb;">Decepti0n</font> instead of ending it.</div>
+						<div class="actionSkill description"><h2>Many Must Fall</h2><span class="redText">Kill Skill.</span> Killing an enemy with a <span class="yellowText">Melee Attack</span> during <span class="pinkText">Decepti0n</span> deploys an additional holographic decoy and extends the duration of <span class="pinkText">Decepti0n</span> instead of ending it.</div>
 						<div class="points"></div>
 					</div>
 				</div>
 				<div class="totalPoints">
 					<span class="totalPoints">0</span>
 				</div>
-				<legend>Bloodshed</legend>
+				<div class="treeName"><h5>Bloodshed</h5></div>
 			</div>
 		</div>
 	</div>
 	</div>
 
-	<br>
-	<br>
 
-<footer class="text-center text-warning">
+<!-- SOCIAL MEDIA -->
+<div class="social">
+	<a href="https://github.com/Lupci" target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+			<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+		</svg>
+	</a>
+	<a href="https://www.youtube.com/channel/UC5lurk85ryivJExBdprLTKw?sub_confirmation=1" target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+			<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+		</svg>
+	</a>
+	<a href="https://www.twitter.com/TheLupci" target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+			<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+		</svg>
+	</a>
+	<a href="https://www.twitch.tv/lupci" target="_black">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+			<path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+			<path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+		</svg>
+	</a>
+</div>
+<!-- FOOTER -->
+<footer>
 	<small class="text-center">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. Made by <a href="https://github.com/Lupci">Lupci</a>.</small>
 	<br>
-    <small>All things herein are the properties of their respective owners.</small>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="../../../java.js"></script> <!-- script for skill tree needed, idk what to do -->
-	</body>
+	<small>All things referenced herein are the properties of their respective owners.</small>
+</footer>	
+</body>
+<script src="/js/lupci.js"></script>
 	
 </html>
