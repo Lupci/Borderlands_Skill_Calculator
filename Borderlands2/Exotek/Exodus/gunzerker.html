@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Borderlands 2 Skill Calculator</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link href='../../../css/lupci.css' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="../../../js/lupci.js"></script>
+	</head>
+	<body>
+        <!-- BANNER -->
+		<div class="banner">
+			<h1><strong><abbr title="Made by Lupci">Borderlands 2</abbr></strong></h1>
+			<h2><strong><a href="exodus.html">&#60;Custom VH Skill Calculator</a></strong></h2>
+			<h2 class="vhName">Salvador</h2>
+			<h3>Level <span class="charLevel">5</span> Gunzerker</h3>
+		</div>
+		<div class="resetTree">
+			<a href="gunzerker.html">Reset</a>
+			<a class="saveLink" href="#">Link</a>
+		</div>
+		<!-- SIDE IMAGE -->
+		<img class="sideImg" src="../../../img/gunzerker.png" style="left:-2.5%;height: 680px;width: 800px;">
+		<div class="actionSkillBox">
+			<div class="actionSkill">
+				<img src="../../../icons/gunzerker-actionskill.png" style="margin-top: 13px;">
+				<div class="description">
+					<h3>Gunzerking</h3>
+					<hr><p><span class="pinkText">Action Skill.</span> Draw a second gun and go nuts! While<span class="pinkText"> Gunzerking</span> you Instantly Regain 50% of Your Total Health, gain <span class="yellowText">Damage Reduction</span> against enemy attacks, and constantly <span class="yellowText">Regenerate Health and Ammo</span>. Does not regenerate rockets.<br><span class="blueText">Cooldown</span>: 42 seconds</p>
+				</div>
+			</div>
+			<div class="ASpoints" style="visibility: visible;">1/1</div>
+		</div>
+		<!-- TREES -->
+		<!-- GREEN TREE -->
+		<div class="treeBox">
+			<div class="greenTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 75px;"></div>
+				<div class="tree">
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-0.png">
+							<div class="description"><h3>Locked And Loaded</h3>
+								<hr><p>Reloading your gun gives you <span class="yellowText">Fire Rate</span> for a short time.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-1.png">
+							<div class="description"><h3>Quick Draw</h3>
+								<hr><p>Increases <span class="yellowText">Weapon Swap Speed</span> and <span class="yellowText">Critical Hit Damage</span>.<br><span class="blueText">Weapon Swap Speed</span>: <span class="bonusNum" data-base="+7"></span><span class="percent">%</span><br><span class="blueText">Critical Hit Damage</span>: <span class="bonusNum" data-base="+2"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-2.png">
+							<div class="description"><h3>I'm Your Huckleberry</h3>
+								<hr><p>Increased <span class="yellowText">Damage</span> and <span class="yellowText">Reload Speed</span> with <span class="yellowText">Pistols</span>.<br><span class="blueText">Pistol Damage</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span><br><span class="blueText">Pistol Reload Speed</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-3.png">
+							<div class="description"><h3>All I Need is One</h3>
+								<hr><p>Swapping weapons causes your <span class="yellowText">next shot</span> fired to deal more damage.<br><span class="blueText">Bullet Power</span>: <span class="bonusNum" data-base="+12"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-4.png">
+							<div class="description"><h3>Divergent Likeness</h3>
+								<hr><p>Increases <span class="yellowText">Damage</span> when <span class="pinkText">Gunzerking</span> with two of the same type of guns, or <span class="yellowText">Accuracy</span> when<span class="pinkText"> Gunzerking</span> with two different types of guns.<br><span class="blueText">Damage</span>: <span class="bonusNum" data-base="+6"></span><span class="percent">%</span><br><span class="blueText">Accuracy</span>: <span class="bonusNum" data-base="+12"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-gunlust-5.png">
+							<div class="description"><h3>Auto-Loader</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy Instantly Reloads all of the guns that you have equipped that are not currently in your hands. Swapping guns after Auto-Loader has reloaded a gun triggers Locked &amp; Loaded.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-6.png">
+							<div class="description"><h3>Money Shot</h3>
+								<hr><p>The <span class="yellowText">last bullet</span> fired from any gun does increased damage per <span class="yellowText">Magazine Size</span>.<br><span class="blueText">Bullet Power</span>: <span class="bonusNum" data-base="+8"></span><span class="percent">%</span><br><span class="blueText">Maximum Damage</span>: <span class="bonusNum" data-base="+80"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-7.png">
+							<div class="description"><h3>Lay Waste</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy provides <span class="yellowText">Fire Rate</span> and <span class="yellowText">Critical Hit Damage</span> with Guns for a short time.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+8"></span><span class="percent">%</span><br><span class="blueText">Critical Hit Damage</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-gunlust-8.png">
+							<div class="description"><h3>Down Not Out</h3>
+								<hr><p>You can <span class="pinkText">Gunzerk</span> while in <span class="yellowText">Fight for Your Life</span>.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-gunlust-9.png">
+							<div class="description"><h3>Keep It Piping Hot</h3>
+								<hr><p>While<span class="pinkText"> Gunzerking</span> is in the process of cooling down you gain bonus to <span class="yellowText">Gun Damage</span>, <span class="yellowText">Melee Damage</span> and <span class="yellowText">Grenade Damage</span>.<br><span class="blueText">Gun Damage</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+6"></span><span class="percent">%</span><br><span class="blueText">Grenade Damage</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-gunlust-10.png">
+							<div class="description"><h3>No Kill Like Overkill</h3>
+								<hr><p>Any <span class="yellowText">Excess Damage</span> dealt to an enemy that kills them is transferred to the <span class="yellowText">next enemy</span> fired at.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="totalPoints">
+						<span class="totalPoints">0
+					</div>
+					<div class="treeName"><h5>Gunlust</h5></div>
+				</div>
+			</div>
+			<!-- BLUE TREE -->
+			<div class="blueTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
+				<div class="tree">
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-0.png">
+							<div class="description"><h3>Inconceivable</h3>
+								<hr><p><span class="yellowText">Chance for shots to not consume ammo</span> depending on how low your health and shields are.<br><span class="blueText">Up to</span> <span class="bonusNum" data-base="10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-1.png">
+							<div class="description"><h3>Filled to the Brim</h3>
+								<hr><p>Increases <span class="yellowText">Magazine Capacity</span> and <span class="yellowText">Ammunition Capacity</span> for all weapon types.<br><span class="blueText">Magazine Capacity</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Ammunition Capacity</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-2.png">
+							<div class="description"><h3>All in the Reflexes</h3>
+								<hr><p><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-3.png">
+							<div class="description"><h3>Last Longer</h3>
+								<hr><p><span class="pinkText">Gunzerking</span> <span class="blueText">duration</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">s</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-4.png">
+							<div class="description"><h3>I'm Ready Already</h3>
+								<hr><p>Increased <span class="pinkText">Gunzerking</span> <span class="yellowText">Cooldown Rate</span>.<br><span class="blueText">Cooldown Rate</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-rampage-5.png">
+							<div class="description"><h3>Steady as She Goes</h3>
+								<hr><p>Increases <span class="yellowText">Recoil Reduction</span> and has a chance to improve <span class="yellowText">Accuracy</span> on hit when<span class="pinkText"> Gunzerking</span>.<br><span class="blueText">Recoil Reduction</span>: <span class="bonusNum" data-base="+80"></span><span class="percent">%</span><br><span class="blueText">Chance +Accuracy</span>: <span class="bonusNum" data-base="30"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-6.png">
+							<div class="description"><h3>5 Shots or 6</h3>
+								<hr><p>Grants a <span class="yellowText">chance to add an extra round of ammunition</span> when firing instead of expending ammunition.<br><span class="blueText">Chance</span>: <span class="bonusNum" data-base="5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-7.png">
+							<div class="description"><h3>Yippie Ki Yay</h3>
+								<hr><p>Increases the <span class="yellowText">duration</span> of<span class="pinkText"> Gunzerking</span> every time an enemy is killed while<span class="pinkText"> Gunzerking</span>.<br><span class="blueText">Duration</span>: <span class="bonusNum" data-base="+0.6"></span><span class="percent">s</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-rampage-8.png">
+							<div class="description"><h3>Double Your Fun</h3>
+								<hr><p>Throwing a grenade while<span class="pinkText"> Gunzerking</span> throws two grenades instead of one. The second grenade doesn't cost ammo.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-rampage-9.png">
+							<div class="description"><h3>Get Some</h3>
+								<hr><p>Shooting an enemy decreases<span class="pinkText"> Gunzerking</span> <span class="yellowText">cooldown</span>.<br>Has a cooldown of 3 seconds.<br><span class="blueText">Cooldown</span>: <span class="bonusNum" data-base="-0.6"></span><span class="percent">s</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-rampage-10.png">
+							<div class="description"><h3>Keep Firing</h3>
+								<hr><p>While<span class="pinkText"> Gunzerking</span>, you gain <span class="yellowText">Fire Rate</span> and <span class="yellowText">Reload Speed</span> depending on how long you hold down the trigger.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+88"></span><span class="percent">%</span><br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+25"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="column3 totalPoints">
+						<span class="totalPoints">0
+					</div>
+					<div class="treeName"><h5>Rampage</h5></div>
+				</div>
+			</div>
+			<!-- RED TREE -->
+			<div class="redTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
+				<div class="tree">
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-0.png">
+							<div class="description"><h3>Hard to Kill</h3>
+								<hr><p>Increases <span class="yellowText">Maximum Health</span> and gain <span class="yellowText">Health Regeneration</span>.<br><span class="blueText">Maximum Health</span>: <span class="bonusNum" data-base="+4"></span><span class="percent">%</span><br><span class="blueText">Health Regen</span>: <span class="bonusNum" data-base="+0.1"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-1.png">
+							<div class="description"><h3>Incite</h3>
+								<hr><p>Taking damage gives <span class="yellowText">Movement Speed</span> and <span class="yellowText">Reload Speed</span> for a few seconds.<br><span class="blueText">Movement Speed</span>: <span class="bonusNum" data-base="+6"></span><span class="percent">%</span><br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-2.png">
+							<div class="description"><h3>Asbestos</h3>
+								<hr><p>Gain Negative <span class="yellowText">Status Effect Duration</span> on self.<br><span class="blueText">Status Effect Time</span>: <span class="bonusNum" data-base="-8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-3.png">
+							<div class="description"><h3>I'm the Juggernaut</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy gives <span class="yellowText">Damage Reduction</span> for a short time.<br><span class="blueText">Damage Reduction</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-4.png">
+							<div class="description"><h3>Ain't Got Time To Bleed</h3>
+								<hr><p>While<span class="pinkText"> Gunzerking</span> you <span class="yellowText">Health Regeneration</span> depending on how low your health is.<br><span class="blueText">Health Rege</span>: <span class="bonusNum" data-base="+0.8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-brawn-5.png">
+							<div class="description"><h3>Fistful of Hurt</h3>
+								<hr><p><span class="purpleText">Melee Override</span>. Throw a heavy punch dealing massive damage and <span class="yellowText">knockback</span>.<br><span class="blueText">Cooldown</span>: <span class="percent">15 seconds</span>.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-6.png">
+							<div class="description"><h3>All Out of Bubblegum</h3>
+								<hr><p>+ <span class="yellowText">Fire Rate</span> when shield is depleted.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+7"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-7.png">
+							<div class="description"><h3>Bus That Can't Slow Down</h3>
+								<hr><p> <span class="yellowText">Movement Speed</span> while<span class="pinkText"> Gunzerking</span>.<br><span class="blueText">Movement Speed</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-8.png">
+							<div class="description"><h3>Just Got Real</h3>
+								<hr><p>+ <span class="yellowText">Gun Damage</span> depending on how low your health is.<br><span class="blueText">Gun Damage</span>: up to <span class="bonusNum" data-base="+8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/gunzerker-brawn-9.png">
+							<div class="description"><h3>Sexual Tyrannosaurus</h3>
+								<hr><p>Taking damage gives <span class="yellowText">Health Regeneration</span> for 5 seconds. This effect does not stack.<br><span class="blueText">Health Regen</span>: <span class="bonusNum" data-base="+0.4"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/gunzerker-brawn-10.png">
+							<div class="description"><h3>Come At Me, Bro</h3>
+								<hr><p>While<span class="pinkText"> Gunzerking</span>, you can press <span class="pinkText">[Action Skill]</span> to taunt your enemies into attacking you. You instantly heal to <span class="yellowText">Full Health</span> and gain massive <span class="yellowText">Damage Reduction</span> for a few seconds.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="column3 totalPoints">
+						<span class="totalPoints">0
+					</div>
+					<div class="treeName"><h5>Brawn</h5></div>
+				</div>
+			</div>
+		</div>
+		<!-- SOCIAL MEDIA -->
+		<div class="social">
+			<a href="https://github.com/Lupci" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+				</svg>
+			</a>
+			<a href="https://www.youtube.com/channel/UC5lurk85ryivJExBdprLTKw?sub_confirmation=1" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+				</svg>
+			</a>
+			<a href="https://www.twitter.com/TheLupci" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+					<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+				</svg>
+			</a>
+			<a href="https://www.twitch.tv/lupci" target="_black">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+					<path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+					<path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+				</svg>
+			</a>
+		</div>
+		<!-- FOOTER -->
+		<!-- <div class="summary">
+			<h2 style="color:#aaaaaa;">List of Skills:</h2>
+			<div class="descriptionContainer"></div>
+		</div>
+		<br> -->
+		<footer>
+			<small>All things referenced herein are the properties of their respective owners.</small>
+		</footer>	
+	</body>
+</html>
