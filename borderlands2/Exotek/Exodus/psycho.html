@@ -6,269 +6,347 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link href='../../../css/lupci.css' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="../../../js/lupci.js"></script>
 	</head>
 	<body>
         <!-- BANNER -->
 		<div class="banner">
 			<h1><strong><abbr title="Made by Lupci">Borderlands 2</abbr></strong></h1>
 			<h2><strong><a href="exodus.html">&#60;Custom VH Skill Calculator</a></strong></h2>
-			<h2>Krieg</h2>
+			<h2 class="vhName">Krieg</h2>
 			<h3>Level <span class="charLevel">5</span> Psycho</h3>
 		</div>
 		<div class="resetTree">
-			<a href="#">Reset</a>
+			<a href="psycho.html">Reset</a>
+			<a class="saveLink" href="#">Link</a>
 		</div>
-
-
-
-<img unselectable="on" class="portrait" src="../../psychoPortrait.png">
-<div>
-	<div class="actionSkill"><img src="../../icons/psycho-actionskill.png" />
-		<div class="description"><h2>Buzz Axe Rampage</h2>Your <span class="yellowText">Melee Damage</span> and <span class="yellowText">Movement Speed</span> is increased. <span class="redText">Kill Skill.</span> Killing an enemy instantly refills your <span class="yellowText">Health</span>. Taking damage accelerates <span class="yellowText">Cooldown Recharge</span>.<br><span class="blueText">Melee Damage</span>: 500%<br>Cooldown: 120 seconds</div>
-		<div class="points">1/1</div>
-	</div><br><br>
-	<div class="actionSkill">
-	<h2>Hidden Ability</h2>
-		<div class="description"><h2>Class Modifiers</h2><span class="yellowText">Yikes</span> <font style="color:#38b833;"></span></div>
-	</div>
-</div>
+		<!-- SIDE IMAGE -->
+		<img class="sideImg" src="../../../img/psycho.png" style="left:7%;">
+		<div class="actionSkillBox">
+			<div class="actionSkill">
+				<img src="../../../icons/psycho-actionskill.png" style="margin-top: 7px;">
+				<div class="description">
+					<h3>Buzz Axe Rampage</h3>
+					<hr><p>Your <span class="yellowText">Melee Damage</span> and <span class="yellowText">Movement Speed</span> is increased. <span class="redText">Kill Skill.</span> Killing an enemy instantly refills your <span class="yellowText">Health</span>. Taking damage accelerates <span class="yellowText">Cooldown Recharge</span>.<br><span class="blueText">Melee Damage</span>: 500%<br><span class="blueText">Cooldown</span>: 120 seconds</p>
+				</div>
+			</div>
+			<div class="ASpoints" style="visibility: visible;">1/1</div>
+		</div>
 		<!-- TREES -->
 		<!-- GREEN TREE -->
 		<div class="treeBox">
 			<div class="greenTree">
-	<div class="tree">
-		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-0.png">
-				<div class="description"><h2>Blood-Filled Guns</h2>Increases <span class="yellowText">Magazine Size</span> per <span class="yellowText">Bloodlust</span> stack.<br><span class="blueText">Magazine Size</span>: <em data-base="+0.5"></em>%</div>
-				<div class="points"></div>
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 75px;"></div>
+				<div class="tree">
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-0.png">
+							<div class="description"><h3>Blood-Filled Guns</h3>
+								<hr><p>Increases <span class="yellowText">Magazine Size</span> per <span class="yellowText">Bloodlust</span> stack.<br><span class="blueText">Magazine Size</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill topTier push1" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-1.png">
+							<div class="description"><h3>Blood Twitch</h3>
+								<hr><p>Increases <span class="yellowText">Weapon Swap Speed</span> per <span class="yellowText">Bloodlust</span> stack.<br><span class="blueText">Weapon Swap Speed</span>: <span class="bonusNum" data-base="+0.3"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-2.png">
+							<div class="description"><h3>Taste of Blood</h3>
+								<hr><p>Gain <span class="yellowText">Damage Reduction</span> during <span class="pinkText">Buzz Axe Rampage</span> per <span class="yellowText">Bloodlust</span> stack. Increases <span class="yellowText">Bloodlust</span> stacks per kill during <span class="pinkText">Buzz Axe Rampage</span>.<br><span class="blueText">Damage Reduction</span>: <span class="bonusNum" data-base="+0.1"></span><span class="percent">%</span><br><span class="blueText">Bloodlust Stacks</span>: <span class="bonusNum"  data-mod="5" data-base="+5"></span><span class="percent">/kill</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/psycho-bloodlust-3.png">
+							<div class="description"><h3>Blood Euphoria</h3>
+								<hr><p><span class="yellowText">Heals</span> a part of your <span class="yellowText">Maximum Health</span> per <span class="yellowText">Bloodlust</span> stack when <span class="redText">kill skills</span> expire.<br><span class="blueText">Healing</span>: <span class="bonusNum" data-base="0.4"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-4.png">
+							<div class="description"><h3>Blood Overdrive</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy gives <span class="yellowText">Melee Damage</span> and <span class="yellowText">Grenade Fuse Time</span> per <span class="yellowText">Bloodlust</span> stack for a short time.<br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">%</span><br><span class="blueText">Grenade Fuse Time</span>: <span class="bonusNum" data-base="-0.005"></span><span class="percent">s</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-5.png">
+							<div class="description"><h3>Blood Bath</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy with a grenade or explosion gives weapon damage per <span class="yellowText">Bloodlust</span> stack for a short time. Enemies killed this way have a chance of dropping Grenade ammunition.<br><span class="blueText">Weapon Damage</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">%</span><br><span class="blueText">Grenade Chance</span>: <span class="bonusNum" data-base="15"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/psycho-bloodlust-6.png">
+							<div class="description"><h3>Buzz Axe Bombardier</h3>
+								<hr><p>When thrown, your buzz axe now has Dynamite attached to it which explodes on impact.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-7.png">
+							<div class="description"><h3>Fuel the Blood</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy with a melee attack gives <span class="yellowText">Grenade Damage</span> per <span class="yellowText">Bloodlust</span> stack for a short time and adds <span class="yellowText">Bloodlust</span> stacks.<br><span class="blueText">Grenade Damage</span>: <span class="bonusNum" data-base="+0.2"></span><span class="percent">%</span><br><span class="blueText">Bloodlust Stacks</span>: <span class="bonusNum" data-base="+2"></span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-8.png">
+							<div class="description"><h3>Blood Trance</h3>
+								<hr><p>Increases the <span class="yellowText">duration</span> of <span class="pinkText">Buzz Axe Rampage</span> per <span class="yellowText">Bloodlust</span> stack (at time of activation).<br><span class="blueText">Action Skill Duration</span>: <span class="bonusNum" data-base="+0.05"></span><span class="percent">s</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-9.png">
+							<div class="description"><h3>Boiling Blood</h3>
+								<hr><p>Increases the time before <span class="yellowText">Bloodlust</span> stacks start to decay.<br><span class="blueText">Bloodlust Duration</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">s</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-bloodlust-10.png">
+							<div class="description"><h3>Nervous Blood</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy gives <span class="yellowText">Reload Speed</span> per <span class="yellowText">Bloodlust</span> stack for a short time.<br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+0.3"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/psycho-bloodlust-11.png">
+							<div class="description"><h3>Bloodsplosion</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy causes them to explode with an <span class="yellowText">Elemental Nova</span> matching the element of the damage that killed it (Non-elemental damage will cause an explosive nova). <span class="yellowText">Overkill Damage</span> is added to this damage.<br><span class="blueText">Damage</span>: <span class="bonusNum" data-base="5"></span><span class="percent">%/stack</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="totalPoints">
+						<span class="totalPoints">0</span>
+					</div>
+					<div class="treeName"><h5>Bloodlust</h5></div>
+				</div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-1.png">
-				<div class="description"><h2>Blood Twitch</h2>Increases <span class="yellowText">Weapon Swap Speed</span> per <span class="yellowText">Bloodlust</span> stack.<br><span class="blueText">Weapon Swap Speed</span>: <em data-base="+0.3"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-2.png">
-				<div class="description"><h2>Taste of Blood</h2>Gain <span class="yellowText">Damage Reduction</span> during <span class="pinkText">Buzz Axe Rampage</span> per <span class="yellowText">Bloodlust</span> stack. Increases <span class="yellowText">Bloodlust</span> stacks per kill during <span class="pinkText">Buzz Axe Rampage</span>.<br><span class="blueText">Damage Reduction</span>: <em data-base="+0.1"></em>%<br><span class="blueText">Bloodlust Stacks</span>: <em  data-mod="5" data-base="+5"></em>/kill</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-bloodlust-3.png">
-				<div class="description"><h2>Blood Euphoria</h2><span class="yellowText">Heals</span> a part of your <span class="yellowText">Maximum Health</span> per <span class="yellowText">Bloodlust</span> stack when <span class="redText">kill skills</span> expire.<br><span class="blueText">Healing</span>: <em data-base="0.4"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-4.png">
-				<div class="description"><h2>Blood Overdrive</h2><span class="redText">Kill Skill.</span> Killing an enemy gives <span class="yellowText">Melee Damage</span> and <span class="yellowText">Grenade Fuse Time</span> per <span class="yellowText">Bloodlust</span> stack for a short time.<br><span class="blueText">Melee Damage</span>: <em data-base="+0.5"></em>%<br><span class="blueText">Grenade Fuse Time</span>: <em data-base="-0.005"></em>s</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-5.png">
-				<div class="description"><h2>Blood Bath</h2><span class="redText">Kill Skill.</span> Killing an enemy with a grenade or explosion gives weapon damage per <span class="yellowText">Bloodlust</span> stack for a short time. Enemies killed this way have a chance of dropping Grenade ammunition.<br><span class="blueText">Weapon Damage</span>: <em data-base="+0.5"></em>%<br><span class="blueText">Grenade Chance</span>: <em data-base="15"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-bloodlust-6.png">
-				<div class="description"><h2>Buzz Axe Bombardier</h2>When thrown, your buzz axe now has Dynamite attached to it which explodes on impact.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-7.png">
-				<div class="description"><h2>Fuel the Blood</h2><span class="redText">Kill Skill.</span> Killing an enemy with a melee attack gives <span class="yellowText">Grenade Damage</span> per <span class="yellowText">Bloodlust</span> stack for a short time and adds <span class="yellowText">Bloodlust</span> stacks.<br><span class="blueText">Grenade Damage</span>: <em data-base="+0.2"></em>%<br><span class="blueText">Bloodlust Stacks</span>: <em data-base="+2"></em></div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-8.png">
-				<div class="description"><h2>Blood Trance</h2>Increases the <span class="yellowText">duration</span> of <span class="pinkText">Buzz Axe Rampage</span> per <span class="yellowText">Bloodlust</span> stack (at time of activation).<br><span class="blueText">Action Skill Duration</span>: <em data-base="+0.05"></em>s</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-9.png">
-				<div class="description"><h2>Boiling Blood</h2>Increases the time before <span class="yellowText">Bloodlust</span> stacks start to decay.<br><span class="blueText">Bloodlust Duration</span>: <em data-base="+0.5"></em>s</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-bloodlust-10.png">
-				<div class="description"><h2>Nervous Blood</h2><span class="redText">Kill Skill.</span> Killing an enemy gives <span class="yellowText">Reload Speed</span> per <span class="yellowText">Bloodlust</span> stack for a short time.<br><span class="blueText">Reload Speed</span>: <em data-base="+0.3"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="../../icons/psycho-bloodlust-11.png">
-				<div class="description"><h2>Bloodsplosion</h2><span class="redText">Kill Skill.</span> Killing an enemy causes them to explode with an <span class="yellowText">Elemental Nova</span> matching the element of the damage that killed it (Non-elemental damage will cause an explosive nova). <span class="yellowText">Overkill Damage</span> is added to this damage.<br><span class="blueText">Damage</span>: <em data-base="5"></em>%/stack</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
-		</div>
-		<div class="treeName"><h5>Bloodlust</h5></div>
-	</div>
-</div>
 			<!-- BLUE TREE -->
 			<div class="blueTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
 				<div class="tree">
-		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-0.png">
-				<div class="description"><h2>Empty the Rage</h2>Increases <span class="yellowText">Melee Damage</span>, you gain extra <span class="yellowText">Melee Damage</span> when shields or magazine are empty.<br><span class="blueText">Melee Damage</span>: <em data-base="+4"></em>%<br><span class="blueText">Bonus</span>: <em data-base="+10"></em>%</div>
-				<div class="points"></div>
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-0.png">
+							<div class="description"><h3>Empty the Rage</h3>
+								<hr><p>Increases <span class="yellowText">Melee Damage</span>, you gain extra <span class="yellowText">Melee Damage</span> when shields or magazine are empty.<br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+4"></span><span class="percent">%</span><br><span class="blueText">Bonus</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill topTier" data-points="0" data-max="1"><img src="../../../icons/psycho-mania-1.png">
+							<div class="description"><h3>Pull the Pin</h3>
+								<hr><p>When you die, you drop a free grenade. If you kill an enemy with it, you get double <span class="yellowText">XP</span>.</p>
+							</div>
+							<span class="points" style="visibility: visible;">0/1</span>
+						</div>
+						<div class="skill topTier" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-2.png">
+							<div class="description"><h3>Feed the Meat</h3>
+								<hr><p>Increases <span class="yellowText">Maximum Health</span> and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Maximum Health</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span><br><span class="blueText">Shield Recharge Delay</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">s</p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-3.png">
+							<div class="description"><h3>Embrace the Pain</h3>
+								<hr><p>Increases <span class="yellowText">Fire Rate</span> when shields are down and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="7"></span><span class="percent">%</span><br><span class="blueText">Shield Recharge Delay</span>: <span class="bonusNum" data-base="1"></span><span class="percent">s</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-4.png">
+							<div class="description"><h3>Fuel the Rampage</h3>
+								<hr><p>Increases <span class="pinkText">Buzz Axe Rampage</span> <span class="yellowText">cooldown</span> when taking damage; additional when taking <span class="yellowText">Health</span> damage. You can now be damaged by teammates.<br><span class="blueText">Cooldown</span>: <span class="bonusNum" data-base="+20"></span><span class="percent">%</span><br><span class="blueText">Bonus</span>: <span class="bonusNum" data-base="+20"></span><span class="percent">%</span><br><span class="blueText">Friendly Fire</span>: <span class="bonusNum" data-mod="55" data-base="-5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-5.png">
+							<div class="description"><h3>Thrill of the Kill</h3>
+								<hr><p><span class="yellowText">Overkill damage</span> is returned to you as <span class="yellowText">Health</span>, depending on how low your health is.<br><span class="blueText">Healing</span>: up to <span class="bonusNum" data-mod="40" data-base="10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/psycho-mania-6.png">
+							<div class="description"><h3>Light the Fuse</h3>
+								<hr><p><span class="yellowText">Fight for Your Life</span> is replaced with <span class="yellowText">Light the Fuse</span>. During <span class="yellowText">Light the Fuse</span> you pull out a live bundle of dynamite and can move normally. The bundle detonates when the timer runs out. If you kill someone you are revived. Getting a revive with the bundle explosion gives you bonus <span class="yellowText">Movement Speed</span> for the remainder of the time that was left in <span class="yellowText">Light the Fuse</span>. Throw Dynamite sticks with Fire. Detonate bundle by holding Action.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-7.png">
+							<div class="description"><h3>Strip the Flesh</h3>
+								<hr><p>Increases <span class="yellowText">Explosive Damage</span>, bonus increases when in <span class="yellowText">Fight for Your Life</span>.<br><span class="blueText">Explosive Damage</span>: <span class="bonusNum" data-base="+6"></span><span class="percent">%</span><br><span class="blueText">Bonus</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/psycho-mania-8.png">
+							<div class="description"><h3>Redeem the Soul</h3>
+								<hr><p>You can instantly <span class="yellowText">Revive</span> teammates at the cost of downing yourself. You may revive in this way only once each time <span class="pinkText">Buzz Axe Rampage</span> is on cooldown.<br><span class="blueText">Fight for Your Life</span>: <span class="bonusNum" data-base="+50"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-9.png">
+							<div class="description"><h3>Salt the Wound</h3>
+								<hr><p>Taking damage from an enemy while your shield is down adds a stack of <span class="yellowText">Salt the Wound</span> to a maximum of 20. Increases <span class="yellowText">Melee Damage</span> and <span class="yellowText">Shotgun Damage</span> per stack.<br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+1.5"></span><span class="percent">%</span><br><span class="blueText">Shotgun Damage</span>: <span class="bonusNum" data-base="+1"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-mania-10.png">
+							<div class="description"><h3>Silence the Voices</h3>
+								<hr><p>More <span class="yellowText">Melee Damage</span>. Chance to attack yourself with melee attacks.<br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+50"></span><span class="percent">%</span><br><span class="blueText">Chance Self Damage</span>: <span class="bonusNum" data-mod="12" data-base="0"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/psycho-mania-11.png">
+							<div class="description"><h3>Release the Beast</h3>
+								<hr><p>Activating the <span class="pinkText">Buzz Axe Rampage</span> when at or <span class="yellowText">below 33%</span> of your max health remaining (i.e., when the ! is showing) instantly refills your health and transforms you into a <span class="yellowText">Badass Psycho Mutant</span> with increased <span class="yellowText">Melee Damage</span> and <span class="yellowText">Damage Reduction</span>. <span class="pinkText">Buzz Axe Rampage</span> is instantly recharged afterwards.<br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+100"></span><span class="percent">%</span><br><span class="blueText">Damage Reduction</span>: <span class="bonusNum" data-base="+50"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="totalPoints">
+						<span class="totalPoints">0</span>
+					</div>
+					<div class="treeName"><h5>Mania</h5></div>
+				</div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-mania-1.png">
-				<div class="description"><h2>Pull the Pin</h2>When you die, you drop a free grenade. If you kill an enemy with it, you get double <span class="yellowText">XP</span>.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-2.png">
-				<div class="description"><h2>Feed the Meat</h2>Increases <span class="yellowText">Maximum Health</span> and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Maximum Health</span>: <em data-base="+10"></em>%<br><span class="blueText">Shield Recharge Delay</span>: <em data-base="+0.5"></em>s</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-3.png">
-				<div class="description"><h2>Embrace the Pain</h2>Increases <span class="yellowText">Fire Rate</span> when shields are down and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Fire Rate</span>: <em data-base="7"></em>%<br><span class="blueText">Shield Recharge Delay</span>: <em data-base="1"></em>s</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-mania-4.png">
-				<div class="description"><h2>Fuel the Rampage</h2>Increases <span class="pinkText">Buzz Axe Rampage</span> <span class="yellowText">cooldown</span> when taking damage; additional when taking <span class="yellowText">Health</span> damage. You can now be damaged by teammates.<br><span class="blueText">Cooldown</span>: <em data-base="+20"></em>%<br><span class="blueText">Bonus</span>: <em data-base="+20"></em>%<br><span class="blueText">Friendly Fire</span>: <em data-mod="55" data-base="-5"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-5.png">
-				<div class="description"><h2>Thrill of the Kill</h2><span class="yellowText">Overkill damage</span> is returned to you as <span class="yellowText">Health</span>, depending on how low your health is.<br><span class="blueText">Healing</span>: up to <em data-mod="40" data-base="10"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-mania-6.png">
-				<div class="description"><h2>Light the Fuse</h2><span class="yellowText">Fight for Your Life</span> is replaced with <span class="yellowText">Light the Fuse</span>. During <span class="yellowText">Light the Fuse</span> you pull out a live bundle of dynamite and can move normally. The bundle detonates when the timer runs out. If you kill someone you are revived. Getting a revive with the bundle explosion gives you bonus <span class="yellowText">Movement Speed</span> for the remainder of the time that was left in <span class="yellowText">Light the Fuse</span>. Throw Dynamite sticks with Fire. Detonate bundle by holding Action.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-7.png">
-				<div class="description"><h2>Strip the Flesh</h2>Increases <span class="yellowText">Explosive Damage</span>, bonus increases when in <span class="yellowText">Fight for Your Life</span>.<br><span class="blueText">Explosive Damage</span>: <em data-base="+6"></em>%<br><span class="blueText">Bonus</span>: <em data-base="+3"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-mania-8.png">
-				<div class="description"><h2>Redeem the Soul</h2>You can instantly <span class="yellowText">Revive</span> teammates at the cost of downing yourself. You may revive in this way only once each time <span class="pinkText">Buzz Axe Rampage</span> is on cooldown.<br><span class="blueText">Fight for Your Life</span>: <em data-base="+50"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-mania-9.png">
-				<div class="description"><h2>Salt the Wound</h2>Taking damage from an enemy while your shield is down adds a stack of <span class="yellowText">Salt the Wound</span> to a maximum of 20. Increases <span class="yellowText">Melee Damage</span> and <span class="yellowText">Shotgun Damage</span> per stack.<br><span class="blueText">Melee Damage</span>: <em data-base="+1.5"></em>%<br><span class="blueText">Shotgun Damage</span>: <em data-base="+1"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-mania-10.png">
-				<div class="description"><h2>Silence the Voices</h2>More <span class="yellowText">Melee Damage</span>. Chance to attack yourself with melee attacks.<br><span class="blueText">Melee Damage</span>: <em data-base="+50"></em>%<br><span class="blueText">Chance Self Damage</span>: <em data-mod="12" data-base="0"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="../../icons/psycho-mania-11.png">
-				<div class="description"><h2>Release the Beast</h2>Activating the <span class="pinkText">Buzz Axe Rampage</span> when at or <span class="yellowText">below 33%</span> of your max health remaining (i.e., when the ! is showing) instantly refills your health and transforms you into a <span class="yellowText">Badass Psycho Mutant</span> with increased <span class="yellowText">Melee Damage</span> and <span class="yellowText">Damage Reduction</span>. <span class="pinkText">Buzz Axe Rampage</span> is instantly recharged afterwards.<br><span class="blueText">Melee Damage</span>: <em data-base="+100"></em>%<br><span class="blueText">Damage Reduction</span>: <em data-base="+50"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
-		</div>
-		<div class="treeName"><h5>Mania</h5></div>
-	</div>
-</div>
 			<!-- RED TREE -->
 			<div class="redTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
 				<div class="tree">
-		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-0.png">
-				<div class="description"><h2>Burn, Baby, Burn</h2>Increases <span class="yellowText">Burn Damage</span> and gain a bonus when on fire. Chance per fire attack to <span class="yellowText">set self on fire</span>.<br><span class="blueText">Burn Damage</span>: <em data-base="+7"></em>%<br><span class="blueText">Bonus</span>: <em data-base="+15"></em>%<br><span class="blueText">Self Ignite Chance</span>: <em data-base="7"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-1.png">
-				<div class="description"><h2>Fuel the Fire</h2><span class="redText">Kill Skill.</span> Chance per fire attack to <span class="yellowText">set self on fire</span>. Killing an enemy gives <span class="yellowText">Elemental Effect Chance</span> for a short time.<br><span class="blueText">Self Ignite Chance</span>: <em data-base="7"></em>%<br><font style="color:#00b4b4;font-size:92%">Elemental Effect Chance</span>: <em data-base="+40"></em>%</div>
-				<div class="points"></div>
+					<div class="tier" data-level="0" data-invested="0" data-total="0">
+						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-0.png">
+							<div class="description"><h3>Burn, Baby, Burn</h3>
+								<hr><p>Increases <span class="yellowText">Burn Damage</span> and gain a bonus when on fire. Chance per fire attack to <span class="yellowText">set self on fire</span>.<br><span class="blueText">Burn Damage</span>: <span class="bonusNum" data-base="+7"></span><span class="percent">%</span><br><span class="blueText">Bonus</span>: <span class="bonusNum" data-base="+15"></span><span class="percent">%</span><br><span class="blueText">Self Ignite Chance</span>: <span class="bonusNum" data-base="7"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+						<div class="skill topTier push1" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-1.png">
+							<div class="description"><h3>Fuel the Fire</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Chance per fire attack to <span class="yellowText">set self on fire</span>. Killing an enemy gives <span class="yellowText">Elemental Effect Chance</span> for a short time.<br><span class="blueText">Self Ignite Chance</span>: <span class="bonusNum" data-base="7"></span><span class="percent">%</span><br><span class="blueText">Elemental Effect Chance</span>: <span class="bonusNum" data-base="+40"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
+						</div>
+					</div>
+					<div class="tier" data-level="1" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-2.png">
+							<div class="description"><h3>Numbed Nerves</h3>
+								<hr><p><span class="yellowText">Damage Reduction</span> when on fire.<br><span class="blueText">Damage Reduction</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-3.png">
+							<div class="description"><h3>Pain is Power</h3>
+								<hr><p>Increases <span class="yellowText">Weapon Damage</span> and gain a bonus when of fire, and <span class="yellowText">Melee Damage</span> (except for Sniper Rifles). Reduced <span class="yellowText">Critical Hit Damage</span>.<br><span class="blueText">Weapon Damage</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Bonus</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span><br><span class="blueText">Critical Hit Damage</span>: <span class="bonusNum" data-base="-5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier" data-level="2" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-4.png">
+							<div class="description"><h3>Elemental Elation</h3>
+								<hr><p>When <span class="yellowText">Elemental Status Effect Damage</span> is being done to enemies you gain stacks of <span class="yellowText">Elemental Elation</span> up to a maximum of 20. Each stack gives <span class="yellowText">Fire Rate</span> and <span class="yellowText">Magazine Size</span>. Stacks will not decay while you are on fire.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+.5" data-mod=".5"></span><span class="percent">%</span><br><span class="blueText">Magazine Size</span>: <span class="bonusNum" data-base="+1"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/psycho-hellborn-5.png">
+							<div class="description"><h3>Delusional Damage</h3>
+								<hr><p>All <span class="yellowText">Elemental Status Effects</span> you cause have a chance to <span class="yellowText">light yourself on fire</span>. Ignite chances are determined by those accumulated from Burn, Baby, Burn and Fuel the Fire.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-6.png">
+							<div class="description"><h3>Fire Fiend</h3>
+								<hr><p>Melee Attacks have a chance to Ignite enemies. <span class="yellowText">Weapon Accuracy</span> and <span class="yellowText">Reload Speed</span> when on fire.<br><span class="blueText">Weapon Accuracy</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span><br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+7"></span><span class="percent">%</span><br><span class="blueText">Chance Ignite Enemies</span>: <span class="bonusNum" data-base="10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="3" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-7.png">
+							<div class="description"><h3>Flame Flare</h3>
+								<hr><p>Increases <span class="yellowText">Burn Duration</span> on you. Chance for your Burn effects to apply another Burn effect.<br><span class="blueText">Self Burn Duration</span>: <span class="bonusNum" data-base="+20"></span><span class="percent">%</span><br><span class="blueText">Reignite Chance</span>: <span class="bonusNum" data-base="+15"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/psycho-hellborn-8.png">
+							<div class="description"><h3>Hellfire Halitosis</h3>
+								<hr><p><span class="purpleText">Melee Override Skill.</span> Pressing Melee causes you to breathe fire in a cone in front of you.<br><span class="blueText">Cooldown</span>: <span class="bonusNum" data-base="15"></span><span class="percent">s</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/psycho-hellborn-9.png">
+							<div class="description"><h3>Elemental Empathy</h3>
+								<hr><p><span class="yellowText">Burn</span> status effect damage heals you part of the damage dealt.<br><span class="blueText">Healing</span>: <span class="bonusNum" data-base="5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
+						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/psycho-hellborn-10.png">
+							<div class="description"><h3>Raving Retribution</h3>
+								<hr><p>While you are on fire, taking damage from enemies will spawn homing <span class="yellowText">balls</span> of fire that seek out the attacker and explode on impact. Fireballs only trigger once per second.</p>
+							</div>
+							<span class="points"></span>
+						</div>
+					</div>
+					<div class="totalPoints">
+						<span class="totalPoints">0</span>
+					</div>
+					<div class="treeName"><h5>Hellborn</h5></div>
+				</div>
 			</div>
 		</div>
-		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-2.png">
-				<div class="description"><h2>Numbed Nerves</h2><span class="yellowText">Damage Reduction</span> when on fire.<br><span class="blueText">Damage Reduction</span>: <em data-base="+10"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-3.png">
-				<div class="description"><h2>Pain is Power</h2>Increases <span class="yellowText">Weapon Damage</span> and gain a bonus when of fire, and <span class="yellowText">Melee Damage</span> (except for Sniper Rifles). Reduced <span class="yellowText">Critical Hit Damage</span>.<br><span class="blueText">Weapon Damage</span>: <em data-base="+5"></em>%<br><span class="blueText">Bonus</span>: <em data-base="+10"></em>%<br><span class="blueText">Critical Hit Damage</span>: <em data-base="-5"></em>%</div>
-				<div class="points"></div>
-			</div>
+		<!-- SOCIAL MEDIA -->
+		<div class="social">
+			<a href="https://github.com/Lupci" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+				</svg>
+			</a>
+			<a href="https://www.youtube.com/channel/UC5lurk85ryivJExBdprLTKw?sub_confirmation=1" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+					<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+				</svg>
+			</a>
+			<a href="https://www.twitter.com/TheLupci" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+					<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+				</svg>
+			</a>
+			<a href="https://www.twitch.tv/lupci" target="_black">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+					<path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+					<path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+				</svg>
+			</a>
 		</div>
-		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-4.png">
-				<div class="description"><h2>Elemental Elation</h2>When <span class="yellowText">Elemental Status Effect Damage</span> is being done to enemies you gain stacks of <span class="yellowText">Elemental Elation</span> up to a maximum of 20. Each stack gives <span class="yellowText">Fire Rate</span> and <span class="yellowText">Magazine Size</span>. Stacks will not decay while you are on fire.<br><span class="blueText">Fire Rate</span>: <em data-base="+.5" data-mod=".5"></em>%<br><span class="blueText">Magazine Size</span>: <em data-base="+1"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-hellborn-5.png">
-				<div class="description"><h2>Delusional Damage</h2>All <span class="yellowText">Elemental Status Effects</span> you cause have a chance to <span class="yellowText">light yourself on fire</span>. Ignite chances are determined by those accumulated from Burn, Baby, Burn and Fuel the Fire.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-6.png">
-				<div class="description"><h2>Fire Fiend</h2>Melee Attacks have a chance to Ignite enemies. <span class="yellowText">Weapon Accuracy</span> and <span class="yellowText">Reload Speed</span> when on fire.<br><span class="blueText">Weapon Accuracy</span>: <em data-base="+10"></em>%<br><span class="blueText">Reload Speed</span>: <em data-base="+7"></em>%<br><span class="blueText">Chance Ignite Enemies</span>: <em data-base="10"></em>%</div>
-				<div class="points"></div>
-			</div>
+		<!-- FOOTER -->
+		<!-- <div class="summary">
+			<h2 style="color:#aaaaaa;">List of Skills:</h2>
+			<div class="descriptionContainer"></div>
 		</div>
-		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-7.png">
-				<div class="description"><h2>Flame Flare</h2>Increases <span class="yellowText">Burn Duration</span> on you. Chance for your Burn effects to apply another Burn effect.<br><span class="blueText">Self Burn Duration</span>: <em data-base="+20"></em>%<br><span class="blueText">Reignite Chance</span>: <em data-base="+15"></em>%</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="../../icons/psycho-hellborn-8.png">
-				<div class="description"><h2>Hellfire Halitosis</h2><span class="purpleText">Melee Override Skill.</span> Pressing Melee causes you to breathe fire in a cone in front of you.<br><span class="blueText">Cooldown</span>: <em data-base="15"></em>s</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="../../icons/psycho-hellborn-9.png">
-				<div class="description"><h2>Elemental Empathy</h2><span class="yellowText">Burn</span> status effect damage heals you part of the damage dealt.<br><span class="blueText">Healing</span>: <em data-base="5"></em>%</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="../../icons/psycho-hellborn-10.png">
-				<div class="description"><h2>Raving Retribution</h2>While you are on fire, taking damage from enemies will spawn homing <span class="yellowText">balls</span> of fire that seek out the attacker and explode on impact. Fireballs only trigger once per second.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
-		</div>
-		<div class="treeName"><h5>Hellborn</h5></div>
-	</div>
-</div>
-</div>
-
-<!-- SOCIAL MEDIA -->
-<div class="social">
-	<a href="https://github.com/Lupci" target="_blank">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-			<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-		</svg>
-	</a>
-	<a href="https://www.youtube.com/channel/UC5lurk85ryivJExBdprLTKw?sub_confirmation=1" target="_blank">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-			<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-		</svg>
-	</a>
-	<a href="https://www.twitter.com/TheLupci" target="_blank">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-			<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-		</svg>
-	</a>
-	<a href="https://www.twitch.tv/lupci" target="_black">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
-			<path d="M3.857 0L1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429l-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
-			<path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
-		</svg>
-	</a>
-</div>
-<!-- FOOTER -->
-<footer>
-	<small class="text-center">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. Made by <a href="https://github.com/Lupci">Lupci</a>.</small>
-	<br>
-	<small>All things referenced herein are the properties of their respective owners.</small>
-</footer>	
-</body>
-<script src="/js/lupci.js"></script>
+		<br> -->
+		<footer>
+			<small>All things referenced herein are the properties of their respective owners.</small>
+		</footer>	
+	</body>
 </html>

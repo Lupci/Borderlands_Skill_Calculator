@@ -6,86 +6,110 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link href='../../../css/lupci.css' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="../../../js/lupci.js"></script>
 	</head>
 	<body>
         <!-- BANNER -->
 		<div class="banner">
 			<h1><strong><abbr title="Made by Lupci">Borderlands 2</abbr></strong></h1>
 			<h2><strong><a href="exodus.html">&#60;Custom VH Skill Calculator</a></strong></h2>
-			<h2>Maya</h2>
+			<h2 class="vhName">Maya</h2>
 			<h3>Level <span class="charLevel">5</span> Siren</h3>
 		</div>
 		<div class="resetTree">
-			<a href="#">Reset</a>
+			<a href="siren.html">Reset</a>
+			<a class="saveLink" href="#">Link</a>
 		</div>
 		<!-- SIDE IMAGE -->
-		<br>
 		<img class="sideImg" src="../../../img/siren.png">
 		<div class="actionSkillBox">
-			<div class="skill actionSkill">
-				<img src="../../../icons/siren-actionskill.png">
+			<div class="actionSkill">
+				<img src="../../../icons/siren-actionskill.png" style="margin-top: 13px;">
 				<div class="description">
 					<h2>Phaselock</h2>
 					<hr><p><span class="pinkText">Action Skill.</span> <span class="yellowText">Lock</span> an enemy in another dimension, preventing him from fighting back for a short while. Some enemies cannot be <span class="pinkText">Phaselocked</span> and instead instantly take damage.<br><span class="blueText">Cooldown</span>: 13 seconds</p>
 				</div>
 			</div>
-			<div class="points">1/1</div>
+			<div class="ASpoints" style="visibility: visible;">1/1</div>
 		</div>
 		<!-- TREES -->
 		<!-- GREEN TREE -->
 		<div class="treeBox">
 			<div class="greenTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 75px;"></div>
 				<div class="tree">
 					<div class="tier" data-level="0" data-invested="0" data-total="0">
 						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-0.png">
-							<div class="description"><h2>Ward</h2>Increases <span class="yellowText">Shield Capacity</span> and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Shield Capacity</span>: <em data-base="+5"></em>%<br><span class="blueText">Shield Recharge Delay</span>: <em data-base="-8"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Ward</h3>
+								<hr><p>Increases <span class="yellowText">Shield Capacity</span> and <span class="yellowText">Shield Recharge Delay</span>.<br><span class="blueText">Shield Capacity</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Shield Recharge Delay</span>: <span class="bonusNum" data-base="-8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 						<div class="skill topTier push1" data-points="0" data-max="5"><img src="../../../icons/siren-motion-1.png">
-							<div class="description"><h2>Accelerate</h2>Increases <span class="yellowText">Gun Damage</span> and <span class="yellowText">Bullet Speed</span>.<br><span class="blueText">Gun Damage</span>: <em data-base="+3"></em>%<br><span class="blueText">Bullet Speed</span>: <em data-base="+4"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Accelerate</h3>
+								<hr><p>Increases <span class="yellowText">Gun Damage</span> and <span class="yellowText">Bullet Speed</span>.<br><span class="blueText">Gun Damage</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span><br><span class="blueText">Bullet Speed</span>: <span class="bonusNum" data-base="+4"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 					</div>
 					<div class="tier" data-level="1" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-2.png">
-							<div class="description"><h2>Suspension</h2>Increases the <span class="yellowText">duration</span> of <span class="pinkText">Phaselock</span>.<br><span class="blueText">Duration</span>: <em data-base="+0.5"></em>s</div>
-							<div class="points"></div>
+							<div class="description"><h3>Suspension</h3>
+								<hr><p>Increases the <span class="yellowText">duration</span> of <span class="pinkText">Phaselock</span>.<br><span class="blueText">Duration</span>: <span class="bonusNum" data-base="+0.5"></span><span class="percent">s</p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/siren-motion-3.png">
-							<div class="description"><h2>Kinetic Reflection</h2><span class="redText">Kill Skill.</span> Killing an enemy causes you to <span class="yellowText">deflect bullets</span> against nearby enemies, <span class="yellowText">reducing damage</span> to you and dealing damage for a short time.<br><span class="blueText">Damage Reduced</span>: <em data-base="10"></em>%<br><span class="blueText">Damage Dealt</span>: <em data-base="40"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Kinetic Reflection</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy causes you to <span class="yellowText">deflect bullets</span> against nearby enemies, <span class="yellowText">reducing damage</span> to you and dealing damage for a short time.<br><span class="blueText">Damage Reduced</span>: <span class="bonusNum" data-base="10"></span><span class="percent">%</span><br><span class="blueText">Damage Dealt</span>: <span class="bonusNum" data-base="40"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier" data-level="2" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-4.png">
-							<div class="description"><h2>Fleet</h2>Your <span class="yellowText">Movement Speed</span> increases while your <span class="yellowText">Shield</span> is <span class="yellowText">depleted</span>.<br><span class="blueText">Movement Speed</span>: <em data-base="+10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Fleet</h3>
+								<hr><p>Your <span class="yellowText">Movement Speed</span> increases while your <span class="yellowText">Shield</span> is <span class="yellowText">depleted</span>.<br><span class="blueText">Movement Speed</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/siren-motion-5.png">
-							<div class="description"><h2>Converge</h2>Your <span class="pinkText">Phaselock</span> ability now also <span class="yellowText">pulls</span> nearby enemies toward the original target.</div>
-							<div class="points"></div>
+							<div class="description"><h3>Converge</h3>
+								<hr><p>Your <span class="pinkText">Phaselock</span> ability now also <span class="yellowText">pulls</span> nearby enemies toward the original target.</p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-6.png">
-							<div class="description"><h2>Inertia</h2><span class="redText">Kill Skill.</span> Killing an enemy <span class="yellowText">regenerates</span> your <span class="yellowText">Shield</span> and increases your <span class="yellowText">Reload Speed</span> for a short time.<br><span class="blueText">Shield Regen</span>: <em data-base="+0.8"></em>%<br><span class="blueText">Reload Speed</span>: <em data-base="+10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Inertia</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy <span class="yellowText">regenerates</span> your <span class="yellowText">Shield</span> and increases your <span class="yellowText">Reload Speed</span> for a short time.<br><span class="blueText">Shield Regen</span>: <span class="bonusNum" data-base="+0.8"></span><span class="percent">%</span><br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="3" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-7.png">
-							<div class="description"><h2>Quicken</h2>Increases the <span class="yellowText">Cooldown Rate</span> of your <span class="pinkText">Phaselock</span>'s Ability.<br><span class="blueText">Cooldown Rate</span>: <em data-base="6"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Quicken</h3>
+								<hr><p>Increases the <span class="yellowText">Cooldown Rate</span> of your <span class="pinkText">Phaselock</span>'s Ability.<br><span class="blueText">Cooldown Rate</span>: <span class="bonusNum" data-base="6"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-motion-8.png">
-							<div class="description"><h2>Sub-Sequence</h2>When an enemy dies under the effects of <span class="pinkText">Phaselock</span>, there is a chance for your <span class="pinkText">Phaselock</span> to <span class="yellowText">seek out</span> and affect another target.<br><span class="blueText">Chance</span>: <em data-base="20"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Sub-Sequence</h3>
+								<hr><p>When an enemy dies under the effects of <span class="pinkText">Phaselock</span>, there is a chance for your <span class="pinkText">Phaselock</span> to <span class="yellowText">seek out</span> and affect another target.<br><span class="blueText">Chance</span>: <span class="bonusNum" data-base="20"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/siren-motion-9.png">
-							<div class="description"><h2>Thoughtlock</h2><span class="pinkText">Phaselock</span> causes enemies to <span class="yellowText">switch allegiance</span> and fight amongst themselves. Additionally, <span class="pinkText">Phaselock</span>'s <span class="yellowText">cooldown</span> and <span class="yellowText">duration</span> are increased.<br><span class="blueText">Cooldown</span>: <em data-base="+3"></em>s<br><span class="blueText">Duration</span>: <em data-base="+4"></em>s<br><span class="blueText">Traitor's Damage</span>: <em data-base="+300"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Thoughtlock</h3>
+								<hr><p><span class="pinkText">Phaselock</span> causes enemies to <span class="yellowText">switch allegiance</span> and fight amongst themselves. Additionally, <span class="pinkText">Phaselock</span>'s <span class="yellowText">cooldown</span> and <span class="yellowText">duration</span> are increased.<br><span class="blueText">Cooldown</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">s</span><br><span class="blueText">Duration</span>: <span class="bonusNum" data-base="+4"></span><span class="percent">s</span><br><span class="blueText">Traitor's Damage</span>: <span class="bonusNum" data-base="+300"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="totalPoints">
@@ -94,60 +118,81 @@
 					<div class="treeName"><h5>Motion</h5></div>
 				</div>
 			</div>
-
 			<!-- BLUE TREE -->
 			<div class="blueTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
 				<div class="tree">
 					<div class="tier" data-level="0" data-invested="0" data-total="0">
 						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-0.png">
-							<div class="description"><h2>Mind's Eye</h2>Increases <span class="yellowText">Critical Hit Damage</span> and <span class="yellowText">Melee Damage</span>.<br><span class="blueText">Critical Hit Damage</span>: <em data-base="+5"></em>%<br><span class="blueText">Melee Damage</span>: <em data-base="+10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Mind's Eye</h3>
+								<hr><p>Increases <span class="yellowText">Critical Hit Damage</span> and <span class="yellowText">Melee Damage</span>.<br><span class="blueText">Critical Hit Damage</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span><br><span class="blueText">Melee Damage</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 						<div class="skill topTier push1" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-1.png">
-							<div class="description"><h2>Sweet Release</h2><span class="redText">Kill Skill.</span> Killing an enemy who is currently <span class="pinkText">Phaselocked</span> creates <span class="yellowText">Life Orbs</span> which automatically <span class="yellowText">seek out</span> and heals you and your friends. The healing is stronger when you or your friend's health is low (up to 15% per Orb).<br><span class="blueText">Orbs Created</span>: <em data-base="1"></em></div>
-							<div class="points"></div>
+							<div class="description"><h3>Sweet Release</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy who is currently <span class="pinkText">Phaselocked</span> creates <span class="yellowText">Life Orbs</span> which automatically <span class="yellowText">seek out</span> and heals you and your friends. The healing is stronger when you or your friend's health is low (up to 15% per Orb).<br><span class="blueText">Orbs Created</span>: <span class="bonusNum" data-base="1"></span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 					</div>
 					<div class="tier" data-level="1" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-2.png">
-							<div class="description"><h2>Restoration</h2>Increases your <span class="yellowText">Maximum Health</span> and <span class="yellowText">attack allies</span> to heal them for part of the attack damage.<br><span class="blueText">Maximum Health</span>: <em data-base="+3"></em>%<br><span class="blueText">Ally Healing</span>: <em data-base="6"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Restoration</h3>
+								<hr><p>Increases your <span class="yellowText">Maximum Health</span> and <span class="yellowText">attack allies</span> to heal them for part of the attack damage.<br><span class="blueText">Maximum Health</span>: <span class="bonusNum" data-base="+3"></span><span class="percent">%</span><br><span class="blueText">Ally Healing</span>: <span class="bonusNum" data-base="6"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-3.png">
-							<div class="description"><h2>Wreck</h2>Gain increased <span class="yellowText">Fire Rate</span> and <span class="yellowText">Damage</span> with guns while you have an enemy <span class="pinkText">Phaselocked</span>.<br><span class="blueText">Fire Rate</span>: <em data-base="+10"></em>%<br><span class="blueText">Damage</span>: <em data-base="+6"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Wreck</h3>
+								<hr><p>Gain increased <span class="yellowText">Fire Rate</span> and <span class="yellowText">Damage</span> with guns while you have an enemy <span class="pinkText">Phaselocked</span>.<br><span class="blueText">Fire Rate</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span><br><span class="blueText">Damage</span>: <span class="bonusNum" data-base="+6"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier" data-level="2" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-4.png">
-							<div class="description"><h2>Elated</h2>You and your friends <span class="yellowText">regenerate Health</span>/second while you have an enemy <span class="pinkText">Phaselocked</span>.<br><span class="blueText">Health Regen</span>: <em data-base="+1"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Elated</h3>
+								<hr><p>You and your friends <span class="yellowText">regenerate Health</span>/second while you have an enemy <span class="pinkText">Phaselocked</span>.<br><span class="blueText">Health Regen</span>: <span class="bonusNum" data-base="+1"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/siren-harmony-5.png">
-							<div class="description"><h2>Res</h2>You can <span class="yellowText">instantly revive</span> a friend in Fight for Your Life by using <span class="pinkText">Phaselock</span> on him/her.</div>
-							<div class="points"></div>
+							<div class="description"><h3>Res</h3>
+								<hr><p>You can <span class="yellowText">instantly revive</span> a friend in Fight for Your Life by using <span class="pinkText">Phaselock</span> on him/her.</p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-6.png">
-							<div class="description"><h2>Recompense</h2>Taking <span class="yellowText">Health damage</span> has a chance of dealing double the amount of damage to your attacker.<br><span class="blueText">Chance</span>: <em data-base="10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Recompense</h3>
+								<hr><p>Taking <span class="yellowText">Health damage</span> has a chance of dealing double the amount of damage to your attacker.<br><span class="blueText">Chance</span>: <span class="bonusNum" data-base="10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="3" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-7.png">
-							<div class="description"><h2>Sustenance</h2><span class="yellowText">Regenerate</span> part of your missing <span class="yellowText">Health</span>/second. The lower your health the more powerful the regeneration.<br><span class="blueText">Health Regen</span>: up to <em data-base="+0.4"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Sustenance</h3>
+								<hr><p><span class="yellowText">Regenerate</span> part of your missing <span class="yellowText">Health</span>/second. The lower your health the more powerful the regeneration.<br><span class="blueText">Health Regen</span>: up to <span class="bonusNum" data-base="+0.4"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-harmony-8.png">
-							<div class="description"><h2>Life Tap</h2><span class="redText">Kill Skill.</span> Killing an enemy gives you <span class="yellowText">Life Steal</span> for a short while.<br><span class="blueText">Life Steal</span>: <em data-base="+1.2"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Life Tap</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy gives you <span class="yellowText">Life Steal</span> for a short while.<br><span class="blueText">Life Steal</span>: <span class="bonusNum" data-base="+1.2"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/siren-harmony-9.png">
-							<div class="description"><h2>Scorn</h2><span class="purpleText">Melee Override.</span> Press <span class="purpleText">[melee]</span> to throw an <span class="yellowText">Orb of Slag</span> that constantly damages enemies near it. Pressing <span class="purpleText">[melee]</span> when Scorn is on cooldown will perform a regular melee attack.<br><span class="blueText">Cooldown</span>: <em data-base="14"></em>s</div>
-							<div class="points"></div>
+							<div class="description"><h3>Scorn</h3>
+								<hr><p><span class="purpleText">Melee Override.</span> Press <span class="purpleText">[melee]</span> to throw an <span class="yellowText">Orb of Slag</span> that constantly damages enemies near it. Pressing <span class="purpleText">[melee]</span> when Scorn is on cooldown will perform a regular melee attack.<br><span class="blueText">Cooldown</span>: <span class="bonusNum" data-base="14"></span><span class="percent">s</p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="totalPoints">
@@ -158,57 +203,79 @@
 			</div>
 			<!-- RED TREE -->
 			<div class="redTree">
+				<div class="bglayer gray"></div>
+				<div class="bglayer color" style="height: 80px;"></div>
 				<div class="tree">
 					<div class="tier" data-level="0" data-invested="0" data-total="0">
 						<div class="skill topTier leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-0.png">
-							<div class="description"><h2>Flicker</h2>Increases your <span class="yellowText">Elemental Effect Chance</span>.<br><span class="blueText">Elemental Effect Chance</span>: <em data-base="+10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Flicker</h3>
+								<hr><p>Increases your <span class="yellowText">Elemental Effect Chance</span>.<br><span class="blueText">Elemental Effect Chance</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 						<div class="skill topTier push1" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-1.png">
-							<div class="description"><h2>Foresight</h2>Increases <span class="yellowText">Magazine Size</span> and <span class="yellowText">Reload Speed</span> with all weapon types. <br><span class="blueText">Magazine Size</span>: <em data-base="+4"></em>%<br><span class="blueText">Reload Speed</span>: <em data-base="+5"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Foresight</h3>
+								<hr><p>Increases <span class="yellowText">Magazine Size</span> and <span class="yellowText">Reload Speed</span> with all weapon types. <br><span class="blueText">Magazine Size</span>: <span class="bonusNum" data-base="+4"></span><span class="percent">%</span><br><span class="blueText">Reload Speed</span>: <span class="bonusNum" data-base="+5"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points" style="visibility: visible;">0/5</span>
 						</div>
 					</div>
 					<div class="tier" data-level="1" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-2.png">
-							<div class="description"><h2>Immolate</h2>All shots fired deal <span class="yellowText">Fire Damage</span> when in <span class="yellowText">Fight For Your Life</span>.<br><span class="blueText">Fire Damage</span>: <em data-base="+10"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Immolate</h3>
+								<hr><p>All shots fired deal <span class="yellowText">Fire Damage</span> when in <span class="yellowText">Fight For Your Life</span>.<br><span class="blueText">Fire Damage</span>: <span class="bonusNum" data-base="+10"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill push1" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-3.png">
-							<div class="description"><h2>Helios</h2><span class="pinkText">Phaselocking</span> an enemy causes a <span class="yellowText">fiery explosion</span>, damaging all nearby enemies.<br><span class="blueText">Damage Rank</span>: <em data-base="1"></em></div>
-							<div class="points"></div>
+							<div class="description"><h3>Helios</h3>
+								<hr><p><span class="pinkText">Phaselocking</span> an enemy causes a <span class="yellowText">fiery explosion</span>, damaging all nearby enemies.<br><span class="blueText">Damage Rank</span>: <span class="bonusNum" data-base="1"></span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier" data-level="2" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-4.png">
-							<div class="description"><h2>Chain Reaction</h2>While you have an enemy <span class="pinkText">Phaselocked</span> all of your bullets that hit enemies have a chance to <span class="yellowText">ricochet</span> and hit another nearby enemy.<br><span class="blueText">Richochet Chance</span>: <em data-base="8"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Chain Reaction</h3>
+								<hr><p>While you have an enemy <span class="pinkText">Phaselocked</span> all of your bullets that hit enemies have a chance to <span class="yellowText">ricochet</span> and hit another nearby enemy.<br><span class="blueText">Richochet Chance</span>: <span class="bonusNum" data-base="8"></span><span class="percent">%</span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="1"><img src="../../../icons/siren-cataclysm-5.png">
-							<div class="description"><h2>Cloud Kill</h2>Shooting an enemy creates a lingering <span class="yellowText">Acid Cloud</span>, which lasts for 5 seconds, dealing constant <span class="yellowText">Corrosive Damage</span> to enemies who touch it. Only one Acid Cloud can be active at a time.</div>
-							<div class="points"></div>
+							<div class="description"><h3>Cloud Kill</h3>
+								<hr><p>Shooting an enemy creates a lingering <span class="yellowText">Acid Cloud</span>, which lasts for 5 seconds, dealing constant <span class="yellowText">Corrosive Damage</span> to enemies who touch it. Only one Acid Cloud can be active at a time.</p>
+							</div>
+							<span class="points"></span>
 						</div>
 						<div class="skill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-6.png">
-							<div class="description"><h2>Backdraft</h2>Your <span class="yellowText">melee attacks</span> deal additional <span class="yellowText">Fire Damage</span>. Also, when your <span class="yellowText">shield</span> becomes <span class="yellowText">depleted</span> you create a <span class="yellowText">fiery explosion</span>, damaging nearby enemies. Your shields must fully recharge between explosions.<br><span class="blueText">Damage Rank</span>: <em data-base="1"></em></div>
-							<div class="points"></div>
+							<div class="description"><h3>Backdraft</h3>
+								<hr><p>Your <span class="yellowText">melee attacks</span> deal additional <span class="yellowText">Fire Damage</span>. Also, when your <span class="yellowText">shield</span> becomes <span class="yellowText">depleted</span> you create a <span class="yellowText">fiery explosion</span>, damaging nearby enemies. Your shields must fully recharge between explosions.<br><span class="blueText">Damage Rank</span>: <span class="bonusNum" data-base="1"></span></p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="3" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-7.png">
-							<div class="description"><h2>Reaper</h2>You deal increased <span class="yellowText">Gun Damage</span> to any enemy who has more than 50% of his health remaining.<br><span class="blueText">Gun Damage</span>: <em data-base="+8"></em>%</div>
-							<div class="points"></div>
+							<div class="description"><h3>Reaper</h3>
+								<hr><p>You deal increased <span class="yellowText">Gun Damage</span> to any enemy who has more than 50% of his health remaining.<br><span class="blueText">Gun Damage</span>: <span class="bonusNum" data-base="+8"></span><span class="percent">%</p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="4" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="5"><img src="../../../icons/siren-cataclysm-8.png">
-							<div class="description"><h2>Blight Phoenix</h2><span class="redText">Kill Skill.</span> Killing an enemy causes you to deal constant <span class="yellowText">Fire Damage</span> and <span class="yellowText">Corrosive Damage</span> to nearby enemies for a short time. The damage is based on your Level and the Level of the Blight Phoenix.</div>
-							<div class="points"></div>
+							<div class="description"><h3>Blight Phoenix</h3>
+								<hr><p><span class="redText">Kill Skill.</span> Killing an enemy causes you to deal constant <span class="yellowText">Fire Damage</span> and <span class="yellowText">Corrosive Damage</span> to nearby enemies for a short time. The damage is based on your Level and the Level of the Blight Phoenix.</p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="tier push1" data-level="5" data-invested="0" data-total="0">
 						<div class="skill leftSkill" data-points="0" data-max="1"><img src="../../../icons/siren-cataclysm-9.png">
-							<div class="description"><h2>Ruin</h2><span class="pinkText">Action Skill Augmentation.</span> <span class="pinkText">Phaselock</span> now <span class="yellowText">slags</span>, <span class="yellowText">corrodes</span> and <span class="yellowText">electrocutes</span> all nearby enemies.</div>
-							<div class="points"></div>
+							<div class="description"><h3>Ruin</h3>
+								<hr><p><span class="pinkText">Action Skill Augmentation.</span> <span class="pinkText">Phaselock</span> now <span class="yellowText">slags</span>, <span class="yellowText">corrodes</span> and <span class="yellowText">electrocutes</span> all nearby enemies.</p>
+							</div>
+							<span class="points"></span>
 						</div>
 					</div>
 					<div class="totalPoints">
@@ -243,11 +310,13 @@
 			</a>
 		</div>
 		<!-- FOOTER -->
+		<!-- <div class="summary">
+			<h2 style="color:#aaaaaa;">List of Skills:</h2>
+			<div class="descriptionContainer"></div>
+		</div>
+		<br> -->
 		<footer>
-			<small class="text-center">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. Made by <a href="https://github.com/Lupci">Lupci</a>.</small>
-			<br>
 			<small>All things referenced herein are the properties of their respective owners.</small>
-		</footer>	
+		</footer>
 	</body>
-	<script src="/js/lupci.js"></script>
 </html>
