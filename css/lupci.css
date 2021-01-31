@@ -442,4 +442,11 @@
 		flex: 0 1 675px; /*  No stretching: */
 		justify-content:center;
 	  }
+
+	.sideImg{
+		top:15%;
+		left:0%;
+		height:200px;
+		width:100px;
+	  }
   }
