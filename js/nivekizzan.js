@@ -1,34 +1,3 @@
-/* CHECK IF: (1) LEFT CLICK / TOUCH (2) RIGHT CLICK (3) HOLD LEFT CLICK / HOLD TOUCH */
-/*
-var mouseDown; // click
-var skillCheck; // where clicked
-var mouseTimer; // timer
-
-function mouseCheck(event) {
-    event.preventDefault();
-    switch(event.which) {
-        case 1: // left click
-            window.clearTimeout(mouseTimer);
-            mouseDown = (new Date()).getTime();
-            skillCheck = $(this);
-            mouseTimer = window.setTimeout('checkLongTouch(true)', 100);
-            break;
-        case 2: // hold click
-            window.clearTimeout(mouseTimer);
-            mouseDown = (new Date()).getTime();
-            skillCheck = $(this);
-            mouseTimer = window.setTimeout('checkLongTouch(true)', 2000);
-            break;
-        case 3: // right click
-            pointsManager($(this), -1);
-            break;
-    }
-    lastTouched = null;
-}
-*/
-
-/* I NEED TO CHANGE EVERYTHING */
-
 var mousedownbegin;
 var lastTouched;
 var touchtimer;
@@ -58,6 +27,21 @@ function handleMouseup(event) {
 		case 3: //right mouse button
 			updatePoints($(this), -1);
 			break;
+	}
+}
+
+function mobileHold() {
+	if (lastTouched !== null) {
+		if ( touchtimer > 1000 ) {
+			updatePoints(lastTouched, -1);
+			updatePoints(lastTouched, -1);
+			updatePoints(lastTouched, -1);
+			updatePoints(lastTouched, -1);
+			updatePoints(lastTouched, -1);
+		} else {
+			updatePoints(lastTouched, 1);
+		}
+		lastTouched = null;
 	}
 }
 
