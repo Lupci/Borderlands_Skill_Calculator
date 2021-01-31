@@ -72,9 +72,12 @@
 	  flex-direction: row;
 	  flex-wrap: wrap;
 	  justify-content: center;
+	  align-items: center;
   }
   .linkBox a{
 	  text-align: center;
+	  display: grid;
+	  place-items: center;
   }
 
   .pathLink{
@@ -487,6 +490,16 @@
 	.social a{
 		padding: 0.5em;
 		float: right;
+	}
+
+	.linkBox{
+		margin-top: 2em;
+	}
+	.linkBox a{
+		height: 55px;
+		width: 150px;
+		padding: auto;
+		margin: 1em 0;
 	}
 
   }
