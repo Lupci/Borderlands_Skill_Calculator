@@ -61,18 +61,9 @@ function handleMouseup(event) {
 	}
 }
 
-
-/* Lupci trying to add mobile support */
-$(document).on("div.skill", function() {
-	$("span.points").on("tap",function() {
-	   $(this).updatePoints(lastTouched, -1);
-	});
- });
-/* does it work? */
-
 function checkLongTouch(fromTimer) {
 	if (lastTouched !== null) {
-		if (fromTimer === true) {
+		if (fromTimer === true || $(this).on("hold")) {
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
