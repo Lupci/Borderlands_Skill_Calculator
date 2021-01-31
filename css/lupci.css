@@ -461,4 +461,14 @@
 	h3{
 		font-size:1.2em;
 	}
+
+	.skill .description{
+		left:-110px;
+		top:60px;
+	}
+
+	.actionSkill .description{
+		left:-43px;
+		top:90px;
+	}
   }
