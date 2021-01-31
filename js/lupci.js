@@ -194,18 +194,3 @@ $(document).ready(function () {
 	});
 	updateStats();
 });
-    
-    /* $("div.greenTree").each(function(index) {
-		updateTree($(this));
-	});
-	updateStats();
-	$("div.blueTree").each(function(index) {
-		updateTree($(this));
-	});
-	updateStats();
-	$("div.redTree").each(function(index) {
-		updateTree($(this));
-	});
-    updateStats();
-    */
-

@@ -187,29 +187,15 @@
   }
 	
   .greenTree, .blueTree, .redTree {
-	  flex: 0 1 220px; /*  No stretching: */
-	  margin: 5px;
+	  flex: 0 1 205px; /*  No stretching: */
+	  margin: 10px;
 	  position: relative;
   }
 
-  /*.tree{
-	  display: flex;
-	  flex-direction: column;
-	  background-size: cover;
-  } */
-/*	  
-  .greenTree .tree{
-	  background: url(../img/skill_green_gray.png) center center no-repeat;
+  .tree{
+	  width: 205px;
   }
 
-  .blueTree .tree{
-	  background: url(../img/skill_blue_gray.png) center center no-repeat;
-  }
-
-  .redTree .tree{
-	  background: url(../img/skill_red_gray.png) center center no-repeat;
-  }
-*/
   /* SKILL POSITION */
 
   /* SKILL DESCRIPTIONS */
@@ -266,7 +252,6 @@
 	text-align: center;
 	padding: 5px 0;
 	border-radius: 6px;
-	/* Position the tooltip text - see examples below! */
 	position: absolute;
 	z-index: 20;
 	left: 55px;
@@ -320,15 +305,20 @@
 	-1px -1px 3px black;
   }
 
-  .treeName{
+  div.treeName{
 	  font-size: 24px;
 	  color:orange;
+	  width: 205px;
+  }
+
+  div.totalPoints{
+	  position: relative;
   }
 
   span.totalPoints{
+	  position: absolute;
+	  right: 0;
 	  color:orangered;
-	  float: right;
-	  margin-right: 15px;
 	  font-size: 24px;
 	  font-weight: 600;
   }
