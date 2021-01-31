@@ -63,7 +63,7 @@ function handleMouseup(event) {
 
 function checkLongTouch(fromTimer) {
 	if (lastTouched !== null) {
-		if (fromTimer === true || $(this).on("hold")) {
+		if (fromTimer === true) {
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
