@@ -126,12 +126,12 @@
 	  color: yellow;
   }
 
-  .social a svg{
+  .social a img{
 	transform: translateX(0) translateY(0);
 	transition: all 0.1s;
   }
 
-  .social a svg:hover{
+  .social a img:hover{
 	transform: translateX(3px) translateY(-3px);
 	/*border-radius: 50%;*/
   }
@@ -430,7 +430,7 @@
 		width: 100%;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
-		margin-top:60px;
+		/*margin-top:60px;*/
 	}
 
 	footer{
@@ -471,4 +471,22 @@
 		left:-43px;
 		top:90px;
 	}
+
+	.social, .resetTree{
+		position: relative;
+		width: 100%;
+	}
+	.mobile{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.social{
+		padding: 0.5em;
+	}
+	.social a{
+		padding: 0.5em;
+		float: right;
+	}
+
   }
