@@ -425,8 +425,9 @@
 
   @media (max-width: 675px) {
 	.greenTree, .blueTree, .redTree{
-		margin: 100px;
+		/*margin: 100px;
 		margin-top: 0;
-		margin-bottom: 0;
+		margin-bottom: 0;*/
+		flex: 0 1 675px; /*  No stretching: */
 	  }
   }
