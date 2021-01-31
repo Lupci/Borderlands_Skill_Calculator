@@ -11,7 +11,6 @@
 	  /*background-size: cover;*/
 	  min-height: 100vh;
 	  position: relative;
-	  justify-content: center;
   }
 
   ::-webkit-scrollbar{
@@ -426,6 +425,18 @@
   }
 
   @media (max-width: 675px) {
+
+	body{
+		width: 100%;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		justify-content: center;
+	}
+
+	footer{
+		position: relative;
+	}
+
 	.greenTree, .blueTree, .redTree{
 		display:flex;
 		flex: 0 1 675px; /*  No stretching: */
