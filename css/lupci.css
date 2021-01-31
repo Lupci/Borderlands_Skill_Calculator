@@ -423,7 +423,7 @@
 	color: #0B0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 675px) {
 	.greenTree, .blueTree, .redTree{
 		margin: 100px;
 		margin-top: 0;
