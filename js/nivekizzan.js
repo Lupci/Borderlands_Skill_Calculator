@@ -30,6 +30,7 @@ function handleMouseup(event) {
 	}
 }
 
+/* mobile support
 function mobileHold() {
 	if (lastTouched !== null) {
 		if ( touchtimer > 1000 ) {
@@ -44,10 +45,11 @@ function mobileHold() {
 		lastTouched = null;
 	}
 }
+*/
 
 function checkLongTouch(fromTimer) {
 	if (lastTouched !== null) {
-		if (fromTimer === true) {
+		if (fromTimer === true || touchtimer > 500) {
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
 			updatePoints(lastTouched, -1);
