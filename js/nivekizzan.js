@@ -20,41 +20,30 @@ function handleMousedown(event) {
 function handleMouseup(event) {
 	event.preventDefault();
 	switch (event.which) {
-		case 1: //mobile hold
-			if (touchtimer > 500) {
-				updatePoints($(this), -1);
-				updatePoints($(this), -1);
-				updatePoints($(this), -1);
-				updatePoints($(this), -1);
-				updatePoints($(this), -1);
-				break;
-			}
-		case 2: //left mouse button
+		case 1: //left mouse button
 			window.clearTimeout(touchtimer);
 			checkLongTouch(false);
 			break;
 		case 3: //right mouse button
 			updatePoints($(this), -1);
 			break;
+		case 4: //add in mobile hold
+		    window.clearTimeout(touchtimer);
+			mousedownbegin = (new Date()).getTime();
+			lastTouched = $(this);
+			if (touchtimer > 500) {
+				updatePoints($(this), -1);
+				updatePoints($(this), -1);
+				updatePoints($(this), -1);
+				updatePoints($(this), -1);
+				updatePoints($(this), -1);
+			}
+			window.clearTimeout(touchtimer);
+			lastTouched = null;
+			break;
 	}
 }
 
-/* mobile support
-function mobileHold() {
-	if (lastTouched !== null) {
-		if ( touchtimer > 1000 ) {
-			updatePoints(lastTouched, -1);
-			updatePoints(lastTouched, -1);
-			updatePoints(lastTouched, -1);
-			updatePoints(lastTouched, -1);
-			updatePoints(lastTouched, -1);
-		} else {
-			updatePoints(lastTouched, 1);
-		}
-		lastTouched = null;
-	}
-}
-*/
 
 function checkLongTouch(fromTimer) {
 	if (lastTouched !== null) {
