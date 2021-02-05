@@ -13,6 +13,10 @@
 	  position: relative;
   }
 
+  .mobile{
+	  height: 3em;
+  }
+
   ::-webkit-scrollbar{
 	  width: 0px;
   }
@@ -251,24 +255,31 @@
   .skill .description, .actionSkill .description {
 	visibility: hidden;
 	width: 120px;
-	background-color: black;
+	background: #222;
 	color: #fff;
-	text-align: center;
+	/*text-align: justify;
+	text-justify: inter-character;*/
 	padding: 5px 0;
-	border-radius: 6px;
+	border-radius: 0.75em;
+	border-style:ridge;
+	border-color: #1b1b1b;
+	border-width: 3px;
 	position: absolute;
 	z-index: 20;
-	left: 55px;
-	left: 65px;
+	left: 75px;
 	top: 0px;
-	width: 250px;
+	width: 240px;
   }
 
   .actionSkill .description{
-	  left: 215px;
-	  left: 225px;
+	  left: 235px;
 	  top: 10px;
 	  width: 300px;
+  }
+
+  .description h3{
+	  text-align: center;
+	  color: #f3f3f3;
   }
 
   /* Show the tooltip text when you mouse over the tooltip container */

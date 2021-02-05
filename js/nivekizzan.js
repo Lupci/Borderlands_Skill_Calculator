@@ -121,7 +121,7 @@ function updateTree(treeHandle) {
 				var base = parseFloat($(this).attr("data-base"));
 				var sum = Math.round((Math.max(p,1) * base + mod)*100)/100; //Math.round to eliminate goofy float errors
 				var plus = ($(this).attr("data-base").substring(0,1) === "+" ? "+" : "");
-				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
+				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "")) + sum); //removed last quotes "-" because of double negative
 			});
 		});
 		$(this).attr("data-total", tierTotal);
