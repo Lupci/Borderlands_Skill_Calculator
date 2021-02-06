@@ -27,7 +27,7 @@ function handleMouseup(event) {
 		case 3: //right mouse button
 			updatePoints($(this), -1);
 			break;
-		case 4: //add in mobile hold
+		/*case 4: // Nivek: add in mobile hold DID NOT WORK
 		    window.clearTimeout(touchtimer);
 			mousedownbegin = (new Date()).getTime();
 			lastTouched = $(this);
@@ -40,10 +40,23 @@ function handleMouseup(event) {
 			}
 			window.clearTimeout(touchtimer);
 			lastTouched = null;
-			break;
+			break;*/
 	}
 }
 
+// Nivek: trying out mobile hold touch
+$(function(){
+	$( "div.skill" ).bind( "taphold", tapholdHandler );
+   
+	function tapholdHandler( event ){
+	  //$( event.target ).addClass( "taphold" );
+	  $( event.target ).updatePoints($(this), -1);
+	  $( event.target ).updatePoints($(this), -1);
+	  $( event.target ).updatePoints($(this), -1);
+	  $( event.target ).updatePoints($(this), -1);
+	  $( event.target ).updatePoints($(this), -1);
+	}
+  });
 
 function checkLongTouch(fromTimer) {
 	if (lastTouched !== null) {
@@ -121,7 +134,7 @@ function updateTree(treeHandle) {
 				var base = parseFloat($(this).attr("data-base"));
 				var sum = Math.round((Math.max(p,1) * base + mod)*100)/100; //Math.round to eliminate goofy float errors
 				var plus = ($(this).attr("data-base").substring(0,1) === "+" ? "+" : "");
-				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "")) + sum); //removed last quotes "-" because of double negative
+				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "")) + sum); // Nivek: removed last quotes "-" because of double negative
 			});
 		});
 		$(this).attr("data-total", tierTotal);

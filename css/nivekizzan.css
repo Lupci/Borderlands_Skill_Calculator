@@ -438,6 +438,12 @@
 	color: #0B0;
   }
 
+  @media (max-width: 1150px) {
+	.redTree .tree .tier .skill .description{
+		left: -265px;
+	}
+  }
+
   @media (max-width: 675px) {
 
 	body{
@@ -477,12 +483,12 @@
 	}
 
 	.skill .description{
-		left:-110px;
-		top:60px;
+		top: 70px;
+		left: -90px;
 	}
 
 	.actionSkill .description{
-		left:-43px;
+		left: -45px;
 		top:90px;
 	}
 
