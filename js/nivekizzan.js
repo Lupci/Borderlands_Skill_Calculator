@@ -46,15 +46,15 @@ function handleMouseup(event) {
 
 // Nivek: trying out mobile hold touch
 $(function(){
-	$( "span.points" ).bind( "taphold", tapholdHandler );
+	$( "span.points" ).bind( "lastTouched", tapholdHandler );
    
 	function tapholdHandler( event ){
 	  //$( event.target ).addClass( "taphold" );
-	  updatePoints($( event.target ), -1);
-	  updatePoints($( event.target ), -1);
-	  updatePoints($( event.target ), -1);
-	  updatePoints($( event.target ), -1);
-	  updatePoints($( event.target ), -1);
+	  $( event.target ).updatePoints(lastTouched, -1);
+	  $( event.target ).updatePoints(lastTouched, -1);
+	  $( event.target ).updatePoints(lastTouched, -1);
+	  $( event.target ).updatePoints(lastTouched, -1);
+	  $( event.target ).updatePoints(lastTouched, -1);
 	}
   });
 
