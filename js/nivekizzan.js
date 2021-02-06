@@ -46,7 +46,7 @@ function handleMouseup(event) {
 
 // Nivek: trying out mobile hold touch
 $(function(){
-	$( "span.points" ).bind( "lastTouched", tapholdHandler );
+	$( "span.points" ).bind( lastTouched, tapholdHandler );
    
 	function tapholdHandler( event ){
 	  //$( event.target ).addClass( "taphold" );
