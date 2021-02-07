@@ -2,7 +2,7 @@
 #### • Skill tree for Custom Vault Hunters.
 
 ## Credits:
-* Web design by Lupci
+* Web Design by Nivekizzan
 * The creators of Borderlands 2
 * Vault Hunter modders
-* bl2skill.com for the `.js`
+* bl2skills.com for the `.js`
